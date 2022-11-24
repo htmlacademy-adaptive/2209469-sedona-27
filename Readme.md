@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Эмиль Абусев](https://up.htmlacademy.ru/adaptive/27/user/2209469).
-* Наставник: `Неизвестно`.
+* Наставник: `Дмитрий Дроганов` (https://htmlacademy.ru/profile/dmdragon).
 
 ---
 
