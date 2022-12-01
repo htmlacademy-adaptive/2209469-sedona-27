@@ -9,8 +9,8 @@
 <body class="page__body">
   <header class="main-header">
     <nav class="main-nav">
-      <a class="main-nav__logo">
-        <img class="main-image__logo" src="images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
+      <a class="main-nav__logo" href="index.html">
+        <img class="main-nav__logo-image" src="images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -34,7 +34,7 @@
     </nav>
   </header>
 
-  <main class="main-container__form">
+  <main class="main-form">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
     <img class="main-image" src="images/image-index-form.svg" width="229" height="39"
       alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой">
@@ -48,99 +48,99 @@
 
     <section class="form-container">
       <h2 class="visually-hidden">Форма заполнения отзывов</h2>
-      <form class="information">
-        <div class="information-name__container">
-          <b class="information__titel">Представьтесь:</b>
-          <p class="information__text">ИМЯ*:</p>
+      <form class="information-form">
+        <div class="information-form__container">
+          <b class="information-form__titel">Представьтесь:</b>
+          <p class="information-form__text">ИМЯ*:</p>
           <label class="information-form__name">
-            <input class="name-input" type="text" name="Имя" placeholder="Пётр">
+            <input class="information-form__input-name" type="text" name="Имя" placeholder="Пётр">
           </label>
-          <p class="information__text">ФАМИЛИЯ*:</p>
+          <p class="information-form__text">ФАМИЛИЯ*:</p>
           <label class="information-form__surname">
-            <input class="surname-input" type="text" name="Фамилия" placeholder="Пустота">
+            <input class="information-form__input-surname" type="text" name="Фамилия" placeholder="Пустота">
           </label>
-          <p class="information__text">ОТЧЕСТВО:</p>
+          <p class="information-form__text">ОТЧЕСТВО:</p>
           <label class="information-form__partronymic">
-            <input class="patronymic-input" type="text" name="Отчество" placeholder="Викторович">
+            <input class="information-form__input-patronymic" type="text" name="Отчество" placeholder="Викторович">
           </label>
         </div>
-        <div class="information-contact__container">
-          <b class="information__titel">Контактная информация:</b>
-          <p class="information__text">Контактный телефон*:</p>
+        <div class="information-form__container">
+          <b class="information-form__titel">Контактная информация:</b>
+          <p class="information-form__text">Контактный телефон*:</p>
           <label class="information-form__phone">
-            <input class="phone-input" type="tel" name="phone" placeholder="Введите телефон">
+            <input class="information-form__input-phone" type="tel" name="phone" placeholder="Введите телефон">
           </label>
-          <p class="information__text">Электронная почта*:</p>
+          <p class="information-form__text">Электронная почта*:</p>
           <label class="information-form__email">
-            <input class="email-input" type="email" name="email" placeholder="Введите e-mail">
+            <input class="information-form__input-email" type="email" name="email" placeholder="Введите e-mail">
           </label>
         </div>
-        <div class="information-radio__container">
-          <b class="information__titel">Ваше общее впечатление:</b>
-          <ul class="information-list">
-            <li class="information-item">
+        <div class="information-form__container">
+          <b class="information-form__titel">Ваше общее впечатление:</b>
+          <ul class="information-form__list">
+            <li class="information-form__item">
               <label class="information-form__radio">
-                <input class="radio-input" type="radio" name="Скорее положительное" value="Скорее положительное"
+                <input class="information-form__input-radio" type="radio" name="Скорее положительное" value="Скорее положительное"
                   checked>
-                <span class="control-mark__radio"></span>
+                <span class="control-mark radio"></span>
                 <span class="control-label">Скорее положительное</span>
               </label>
             </li>
-            <li class="information-item">
+            <li class="information-form__item">
               <label class="information-form__radio">
-                <input class="input-radio" type="radio" name="Скорее отрицательное" value="Скорее отрицательное">
-                <span class="control-mark__radio"></span>
+                <input class="information-form__input-radio" type="radio" name="Скорее отрицательное" value="Скорее отрицательное">
+                <span class="control-mark radio"></span>
                 <span class="control-label">Скорее отрицательное</span>
               </label>
             </li>
-            <li class="information-itme">
+            <li class="information-form__item">
               <label class="information-form__radio">
-                <input class="radio-input" type="radio" name="Затрудняюсь ответить" value="Затрудняюсь ответить">
-                <span class="control-mark__radio"></span>
+                <input class="information-form__radio-input" type="radio" name="Затрудняюсь ответить" value="Затрудняюсь ответить">
+                <span class="control-mark radio"></span>
                 <span class="control-label">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </div>
-        <div class="information-checkbox__container">
-          <b class="information__titel">Посещенные достопримечательности:</b>
-          <ul class="information-list">
-            <li class="information-item">
-              <label class="information-from__checkbox">
-                <input class="checkbox-input" type="checkbox" name="Мост Дьявола" checked>
-                <span class="control-mark__checkbox"></span>
+        <div class="information-form__container">
+          <b class="information-form__titel">Посещенные достопримечательности:</b>
+          <ul class="information-form__list">
+            <li class="information-form__item">
+              <label class="information-form__checkbox">
+                <input class="information-form__input-checkbox" type="checkbox" name="Мост Дьявола" checked>
+                <span class="control-mark checkbox"></span>
                 <span class="control-label">Мост Дьявола</span>
               </label>
             </li>
-            <li class="information-item">
-              <label class="information-from__checkbox">
-                <input class="checkbox-input" type="checkbox" name="Гора-Колокол" checked>
-                <span class="control-mark__checkbox"></span>
+            <li class="information-form__item">
+              <label class="information-form__checkbox">
+                <input class="information-form__input-checkbox" type="checkbox" name="Гора-Колокол" checked>
+                <span class="control-mark checkbox"></span>
                 <span class="control-label">Гора-Колоколе</span>
               </label>
             </li>
-            <li class="information-itme">
-              <label class="information-forn__checkbox">
-                <input class="checkbox-input" type="checkbox" name="Слайд-парк" checked>
-                <span class="control-mark__checkbox"></span>
+            <li class="information-form__item">
+              <label class="information-form__checkbox">
+                <input class="information-form__input-checkbox" type="checkbox" name="Слайд-парк" checked>
+                <span class="control-mark checkbox"></span>
                 <span class="control-label">Слайд-парк</span>
               </label>
             </li>
-            <li class="information-item">
+            <li class="information-form__item">
               <label class="information-form__checkbox">
-                <input class="checkbox-input" type="checkbox" name="Красные скалы">
-                <span class="control-mark__checkbox"></span>
+                <input class="information-form__input-checkbox" type="checkbox" name="Красные скалы">
+                <span class="control-mark checkbox"></span>
                 <span class="control-label">Красные скалы</span>
               </label>
             </li>
           </ul>
         </div>
-        <div class="information-comment__container">
-          <b class="information__titel">Опишите свои эмоции:</b>
-          <textarea class="comment-text" name="comment"></textarea>
+        <div class="information-form__container">
+          <b class="information-form__titel">Опишите свои эмоции:</b>
+          <textarea class="information-form__comment-text" name="comment"></textarea>
         </div>
-        <button class="button-form" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
-        <p class="helper-text">* — обязательные поля</p>
+        <button class="information-form__button" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
+        <p class="information-form__helper-text">* — обязательные поля</p>
       </form>
     </section>
   </main>
@@ -148,11 +148,11 @@
 
   <footer class="main-footer">
     <div class="main-footer__container">
-      <div class="main-footer_social social">
+      <div class="main-footer__social social">
         <b class="social__titel">#visitSEDONA</b>
         <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social-link__vkontakte" href="#">
+          <li class="social-item">
+            <a class="social-item__social-vkontakte" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="" viewBox="0 0 48 48">
                 <path fill="#81B3D2" d="M0 0h48v48H0z" />
                 <g clip-path="url(#a)">
@@ -169,8 +169,8 @@
               <span class="visually-hidden">Найти нас в Вконтакте</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social-link__telegram" href="#">
+          <li class="social-item">
+            <a class="social-item__social-telegram" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="" viewBox="0 0 48 48">
                 <path fill="#81B3D2" d="M0 0h48v48H0z" />
                 <path fill="#fff"
@@ -179,8 +179,8 @@
               <span class="visually-hidden">Найти нас в Телеграм</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social-link_youtube" href="#">
+          <li class="social-item">
+            <a class="social-item__social-youtube" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="" viewBox="0 0 48 48">
                 <path fill="#81B3D2" d="M0 0h48v48H0z" />
                 <path fill="#fff"
@@ -191,9 +191,9 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <b class="copyright__text">Разработано</b>
+      <div class="footer-copyright">
+        <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <b class="footer-copyright__text">Разработано</b>
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="" viewBox="0 0 27 35">
             <path fill="#000"
               d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
@@ -205,19 +205,19 @@
   </footer>
 
   <section class="modal-warning">
-    <div class="modal-warning__container modal-warning">
-      <h2 class="modal-warning__titel">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
-      <p class="modal-warning__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <a class="modal-warning__link" href="form.html">OK</a>
+    <div class="warning-container">
+      <h2 class="warning-container__titel">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+      <p class="warning-container__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <a class="warning-container__link" href="form.html">OK</a>
     </div>
   </section>
 
   <section class="modal-sent">
-    <div class="modal-sent__container modal-sent">
-      <h2 class="modal-sent__titel">Ваш отзыв отправлен!</h2>
-      <p class="modal-sent__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
+    <div class="sent-container">
+      <h2 class="sent-container__titel">Ваш отзыв отправлен!</h2>
+      <p class="sent-container__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
         его на сайте.</p>
-      <a class="modal-sent__link" href="form.html">ЗАКРЫТЬ ОКНО</a>
+      <a class="sent-container__link" href="form.html">ЗАКРЫТЬ ОКНО</a>
     </div>
   </section>
 </body>
