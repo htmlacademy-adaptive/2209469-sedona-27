@@ -11,7 +11,7 @@
   <header class="main-header">
     <nav class="main-nav">
       <a class="main-nav__logo" href="index.html">
-        <img class="main-image__logo" src="images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
+        <img class="main-nav__logo-image" src="images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -35,7 +35,7 @@
     </nav>
   </header>
 
-  <main class="main-container__catalog">
+  <main class="main-container">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
     <img class="main-image" src="images/image-index-form.svg" width="229" height="39"
       alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой">
@@ -55,7 +55,7 @@
             <b class="">Неродные просторы</b>
             <p class="">Автор фото: Борис</p>
           </a>
-          <a class="gallery-link__like" href="#">
+          <a class="gallery-link link-like" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
               <path fill="#000"
                 d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
@@ -71,7 +71,7 @@
             <b class="">Местная растительность</b>
             <p class="">Автор фото: Сергей</p>
           </a>
-          <a class="gallery-link__like" href="#">
+          <a class="gallery-link link-like" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
               <path fill="#000"
                 d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
@@ -87,7 +87,7 @@
             <b class="">Дорога на север</b>
             <p class="">Автор фото: Петр</p>
           </a>
-          <a class="gallery-link__like" href="#">
+          <a class="gallery-link link-like" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
               <path fill="#000"
                 d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
@@ -103,7 +103,7 @@
             <b class="">Мост дьявола</b>
             <p class="">Автор фото: Антон</p>
           </a>
-          <a class="gallery-link__like" href="#">
+          <a class="gallery-link link-like" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
               <path fill="#000"
                 d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
@@ -116,21 +116,21 @@
     </section>
 
     <section class="video-gallery">
-      <h2 class="gallery__titel">Все еще сомневаетесь?</h2>
-      <p class="gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <button class="gallery__button" type="button">
-        <img src="images/image-video.jpg" alt="Видео запись просторов Седоны">
+      <h2 class="video-gallery__titel">Все еще сомневаетесь?</h2>
+      <p class="video-gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <button class="video-gallery__button" type="button">
+        <img class="video-gallery__video" src="images/image-video.jpg" alt="Видео запись просторов Седоны">
       </button>
     </section>
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__container">
-      <div class="main-footer_social social">
+      <div class="main-footer__social social">
         <b class="social__titel">#visitSEDONA</b>
         <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social-link__vkontakte" href="#">
+          <li class="social-item">
+            <a class="social-item__social-vkontakte" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="" viewBox="0 0 48 48">
                 <path fill="#81B3D2" d="M0 0h48v48H0z" />
                 <g clip-path="url(#a)">
@@ -147,8 +147,8 @@
               <span class="visually-hidden">Найти нас в Вконтакте</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social-link__telegram" href="#">
+          <li class="social-item">
+            <a class="social-item__social-telegram" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="" viewBox="0 0 48 48">
                 <path fill="#81B3D2" d="M0 0h48v48H0z" />
                 <path fill="#fff"
@@ -157,8 +157,8 @@
               <span class="visually-hidden">Найти нас в Телеграм</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social-link_youtube" href="#">
+          <li class="social-item">
+            <a class="social-item__social-youtube" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="" viewBox="0 0 48 48">
                 <path fill="#81B3D2" d="M0 0h48v48H0z" />
                 <path fill="#fff"
@@ -169,9 +169,9 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <b class="copyright__text">Разработано</b>
+      <div class="footer-copyright">
+        <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <b class="footer-copyright__text">Разработано</b>
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="" viewBox="0 0 27 35">
             <path fill="#000"
               d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />

@@ -11,7 +11,7 @@
   <header class="main-header">
     <nav class="main-nav">
       <a class="main-nav__logo" href="index.html">
-        <img class="main-image__logo" src="images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
+        <img class="main-nav__logo-image" src="images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -52,8 +52,8 @@
           <p class="advantage__nomber">— №1 —</p>
           <p class="advantage__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </li>
-        <li class="advantage__item">
-          <img class="advantage-image__city" src="images/image-sedona-city.jpg" width="520" height="260"
+        <li class="advantage-item">
+          <img class="advantage-item__city-image" src="images/image-sedona-city.jpg" width="520" height="260"
             alt="Городок в Седоне">
         </li>
         <li class="advantage__item">
@@ -73,8 +73,8 @@
           <p class="advantage__nomber">— №2 —</p>
           <p class="advantage__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </li>
-        <li class="advantage__item">
-          <img class="advantage-image__bridge" src="images/image-bridge.jpg" width="520" height="260"
+        <li class="advantage-item">
+          <img class="advantage-item__bridge-image" src="images/image-bridge.jpg" width="520" height="260"
             alt="Городок в Седоне">
         </li>
       </ul>
@@ -97,25 +97,25 @@
       </ul>
     </section>
     <section class="search">
-      <h2 class="search-hotel__titel">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-      <p class="serch-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      <h2 class="search__titel">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+      <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
-      <a class="serch-hotel__link" href="#">Найти Гостиницу</a>
+      <a class="search__link" href="#">Найти Гостиницу</a>
     </section>
     <section class="lacation">
       <h2 class="visually-hidden"> Карта с отелями Седона</h2>
-      <img class="lacation-image__map" src="images/image-map.jpg" width="320" height="350" alt="Карта гостиниц">
-      <button class="lacation-button__map" type="button"></button>
+      <img class="lacation-image" src="images/image-map.jpg" width="320" height="350" alt="Карта гостиниц">
+      <button class="lacation-button" type="button"></button>
     </section>
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__container">
-      <div class="main-footer_social social">
+      <div class="main-footer__social social">
         <b class="social__titel">#visitSEDONA</b>
         <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social-link__vkontakte" href="#">
+          <li class="social-item">
+            <a class="social-item__social-vkontakte" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="" viewBox="0 0 48 48">
                 <path fill="#81B3D2" d="M0 0h48v48H0z" />
                 <g clip-path="url(#a)">
@@ -132,8 +132,8 @@
               <span class="visually-hidden">Найти нас в Вконтакте</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social-link__telegram" href="#">
+          <li class="social-item">
+            <a class="social-item__social-telegram" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="" viewBox="0 0 48 48">
                 <path fill="#81B3D2" d="M0 0h48v48H0z" />
                 <path fill="#fff"
@@ -142,8 +142,8 @@
               <span class="visually-hidden">Найти нас в Телеграм</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social-link_youtube" href="#">
+          <li class="social-item">
+            <a class="social-item__social-youtube" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="" viewBox="0 0 48 48">
                 <path fill="#81B3D2" d="M0 0h48v48H0z" />
                 <path fill="#fff"
@@ -154,9 +154,9 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <b class="copyright__text">Разработано</b>
+      <div class="footer-copyright">
+        <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <b class="footer-copyright__text">Разработано</b>
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="" viewBox="0 0 27 35">
             <path fill="#000"
               d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
