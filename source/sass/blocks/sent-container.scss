@@ -1,29 +1,37 @@
-.advantage__titel {
+.sent-container {
+  width: 320px;
+}
+
+.sent-container__title {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sent-container__text {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sent-container__link {
   color: #ffffff;
+  background-color: #81b3d2;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-}
-
-.advantage__titel-servis {
-  color: #000000;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.advantage__titel-bottom {
-  color: #000000;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
+  text-decoration: none;
+  margin: 20px;
+  padding: 18px 60px;
 }

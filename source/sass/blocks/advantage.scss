@@ -2,3 +2,106 @@
   margin: 0;
   padding: 0;
 }
+
+.advantage__list {
+  margin: 0;
+  padding: 0;
+}
+
+.advantage__item {
+  background-color: #81b3d2;
+  margin: 0;
+  padding: 0;
+}
+
+.advantage__item-service {
+  background-color: #ffffff;
+}
+
+.advantage__item-bottom {
+  background-color: #eeeeee;
+}
+
+.advantage__title {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantage__title-service {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantage__title-bottom {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantage__number {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantage__number-bottom {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantage__text {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantage__text-service {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantage__text-bottom {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantage-item__image {
+  width: 320px;
+}

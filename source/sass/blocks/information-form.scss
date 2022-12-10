@@ -1,0 +1,156 @@
+.information-form {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.information-form__container {
+  margin: 0;
+  padding: 0;
+}
+
+.information-form__title {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.information-form__text {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.information-form__name {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.information-form__input-name {
+  color: #000000;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: start;
+}
+
+.information-form__phone {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.information-form__input-phone {
+  color: #000000 30%;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: start;
+}
+
+.information-form__email {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.information-form__input-email {
+  color: #000000 30%;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: start;
+}
+
+.information-form__list {
+  margin: 0;
+  padding: 0;
+}
+
+.information-form__item {
+  margin: 0;
+  padding: 0;
+}
+
+.information-form__radio {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.information-form__input-radio {
+  padding: 0;
+}
+
+.information-form__checkbox {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.information-form__input-checkbox {
+  margin: 0;
+  padding: 0;
+}
+
+.information-form__comment-text {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: start;
+  width: 279px;
+}
+
+.information-form__button {
+  color: #ffffff;
+  background-color: #81b3d2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  width: 279px;
+  margin: 0;
+  padding: 16px 49px;
+}
+
+.information-form__helper-text {
+  color: rgba(51, 51, 51, 0.6);
+  background-color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: end;
+}

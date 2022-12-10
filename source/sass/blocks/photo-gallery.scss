@@ -1,0 +1,56 @@
+.photo-gallery {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+}
+
+.photo-gallery__list {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+}
+
+.photo-gallery__item {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-gallery__image {
+  width: 280px;
+}
+
+.photo-gallery__link {
+  text-decoration: none;
+}
+
+.photo-gallery__title {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.photo-gallery__text {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.photo-gallery__link-like {
+  text-decoration: none;
+}
+
+.photo-gallery__like-number {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
