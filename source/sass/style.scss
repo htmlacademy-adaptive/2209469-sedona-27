@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+@use "./blocks/page__body.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-logo.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/main-container.scss";
+@use "./blocks/main-image.scss";
+@use "./blocks/description.scss";
+@use "./blocks/advantage.scss";
+@use "./blocks/search.scss";
+@use "./blocks/lacation.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/social.scss";
+@use "./blocks/footer-copyright.scss";
+@use "./blocks/review-countainer.scss";
+@use "./blocks/form-container.scss";
+@use "./blocks/information-form.scss";
+@use "./blocks/modal-warning.scss";
+@use "./blocks/warning-container.scss";
+@use "./blocks/modal-sent.scss";
+@use "./blocks/sent-container.scss";
+@use "./blocks/catalog-countainer.scss";
+@use "./blocks/photo-gallery.scss";
+@use "./blocks/video-gallery.scss";

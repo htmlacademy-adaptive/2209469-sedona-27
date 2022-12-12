@@ -4,30 +4,31 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="main-header">
+    <a class="main-logo" href="index.html">
+      <img class="main-logo__logo-image" src="images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
+    </a>
     <nav class="main-nav">
-      <a class="main-nav__logo" href="index.html">
-        <img class="main-nav__logo-image" src="images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
-      </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__container">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__item-link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фото и видео</a>
+            <a class="site-list__item-link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Форма Отзыва</a>
+            <a class="site-list__item-link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML ACADEMY</a>
+            <a class="site-list__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
       </div>
@@ -40,85 +41,85 @@
       alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой">
 
     <section class="catalog-countainer">
-      <h2 class="catalog-countainer__titel">Фото и видео</h2>
+      <h2 class="catalog-countainer__title">Фото и видео</h2>
       <p class="catalog-countainer__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
         политике и экономике.</p>
     </section>
 
     <section class="photo-gallery">
       <h2 class="visually-hidden">Фотогалерея Седоны</h2>
-      <ul class="gallery-list">
-        <li class="gallery-item">
-          <a class="gallery-link" href="#">
-            <img src="images/catalog-image-1.jpg" alt="Фотография неродных просторов">
-            <b class="">Неродные просторы</b>
-            <p class="">Автор фото: Борис</p>
+      <ul class="photo-gallery__list">
+        <li class="photo-gallery__item">
+          <a class="photo-gallery__link" href="#">
+            <img class="photo-gallery__image" src="images/catalog-image-1.jpg" alt="Фотография неродных просторов">
+            <b class="photo-gallery__title">Неродные просторы</b>
+            <p class="photo-gallery__text">Автор фото: Борис</p>
           </a>
-          <a class="gallery-link link-like" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
+          <a class="photo-gallery__link-like" href="#">
+            <svg class="photo-gallery__image-like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
               <path fill="#000"
                 d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
                 opacity=".3" />
             </svg>
-            <span class="like-number">1350</span>
+            <span class="photo-gallery__like-number">1350</span>
+          </a>
+        </li>
+
+        <li class="photo-gallery__item">
+          <a class="photo-gallery__link" href="#">
+            <img class="photo-gallery__image" src="images/catalog-image-2.jpg" alt="Фотография местной растительности Седоны">
+            <b class="photo-gallery__title">Местная растительность</b>
+            <p class="photo-gallery__text">Автор фото: Сергей</p>
+          </a>
+          <a class="photo-gallery__link-like" href="#">
+            <svg class="photo-gallery__image-like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
+              <path fill="#000"
+                d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
+                opacity=".3" />
+            </svg>
+            <span class="photo-gallery__like-number">143</span>
           </a>
         </li>
 
         <li class="gallery-item">
-          <a class="gallery-link" href="#">
-            <img src="images/catalog-image-2.jpg" alt="Фотография местной растительности Седоны">
-            <b class="">Местная растительность</b>
-            <p class="">Автор фото: Сергей</p>
+          <a class="photo-gallery__link" href="#">
+            <img class="photo-gallery__image" src="images/catalog-image-3.jpg" alt="Фотография дороги ведущей на север Седоны">
+            <b class="photo-gallery__title">Дорога на север</b>
+            <p class="photo-gallery__text">Автор фото: Петр</p>
           </a>
-          <a class="gallery-link link-like" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
+          <a class="photo-gallery__link-like" href="#">
+            <svg class="photo-gallery__image-like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
               <path fill="#000"
                 d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
                 opacity=".3" />
             </svg>
-            <span class="like-number">143</span>
+            <span class="photo-gallery__like-number">96</span>
           </a>
         </li>
 
         <li class="gallery-item">
-          <a class="gallery-link" href="#">
-            <img src="images/catalog-image-3.jpg" alt="Фотография дороги ведущей на север Седоны">
-            <b class="">Дорога на север</b>
-            <p class="">Автор фото: Петр</p>
+          <a class="photo-gallery__link" class="photo-gallery__link" href="#">
+            <img class="photo-gallery__image" src="images/catalog-image-1.jpg" alt="Фотография моста дьявола в Седоне">
+            <b class="photo-gallery__title">Мост дьявола</b>
+            <p class="photo-gallery__text">Автор фото: Антон</p>
           </a>
-          <a class="gallery-link link-like" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
+          <a class="photo-gallery__link-like" href="#">
+            <svg class="photo-gallery__image-like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
               <path fill="#000"
                 d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
                 opacity=".3" />
             </svg>
-            <span class="like-number">96</span>
-          </a>
-        </li>
-
-        <li class="gallery-item">
-          <a class="gallery-link" href="#">
-            <img src="images/catalog-image-1.jpg" alt="Фотография моста дьявола в Седоне">
-            <b class="">Мост дьявола</b>
-            <p class="">Автор фото: Антон</p>
-          </a>
-          <a class="gallery-link link-like" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21">
-              <path fill="#000"
-                d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
-                opacity=".3" />
-            </svg>
-            <span class="like-number">254</span>
+            <span class="photo-gallery__like-number">254</span>
           </a>
         </li>
       </ul>
     </section>
 
     <section class="video-gallery">
-      <h2 class="video-gallery__titel">Все еще сомневаетесь?</h2>
+      <h2 class="video-gallery__title">Все еще сомневаетесь?</h2>
       <p class="video-gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <button class="video-gallery__button" type="button">
-        <img class="video-gallery__video" src="images/image-video.jpg" alt="Видео запись просторов Седоны">
+        <img class="video-gallery__video" src="images/image-video.jpg" alt="Видео запись просторов Седоны" >
       </button>
     </section>
   </main>
@@ -126,7 +127,7 @@
   <footer class="main-footer">
     <div class="main-footer__container">
       <div class="main-footer__social social">
-        <b class="social__titel">#visitSEDONA</b>
+        <b class="social__title">#visitSEDONA</b>
         <ul class="social__list">
           <li class="social-item">
             <a class="social-item__social-vkontakte" href="#">

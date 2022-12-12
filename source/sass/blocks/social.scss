@@ -1,0 +1,43 @@
+.social-item {
+  margin: 0;
+  padding: 0;
+}
+
+.social__title {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.social__list {
+  display: flex;
+  width: 156px;
+  margin: 33.55px 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.social-item__social-vkontakte {
+  display: block;
+  width: 48px;
+  margin: 0;
+  margin-right: 6px;
+}
+
+.social-item__social-telegram {
+  display: block;
+  width: 48px;
+  margin: 0;
+  margin-right: 6px;
+}
+
+.social-item__social-youtube {
+  display: block;
+  width: 48px;
+  margin: 0;
+}
+
