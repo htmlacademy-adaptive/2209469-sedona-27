@@ -1,27 +1,29 @@
-.catalog-countainer {
+.provocation {
   margin: 0;
-  padding: 37px 7px;
-  padding-bottom: 25px;
+  padding: 0 12px;
+  padding-top: 17px;
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-countainer {
+  .provocation {
     width: 768px;
     margin: 0;
-    padding: 67px 0;
+    padding: 58px 0;
+    padding-bottom: 66px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .catalog-countainer {
+  .provocation {
     width: 1200px;
     margin: 0;
-    padding: 100px 0;
-    padding-bottom: 65px;
+    padding: 58px 0;
+    padding-bottom: 66px;
   }
 }
 
-.catalog-countainer__title {
+
+.provocation__title {
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 21px;
@@ -34,44 +36,44 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-countainer__title {
-    margin: 0 120px;
+  .provocation__title {
+    margin: 0 140px;
     padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .catalog-countainer__title {
-    margin: 0 200px;
+  .provocation__title {
+    margin: 0 240px;
     padding: 0;
   }
 }
 
-.catalog-countainer__text {
-  color: #333333;
+.provocation__text {
+  color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-top: 35px;
+  margin-top: 40px;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-countainer__text {
-    margin: 0 140px;
-    margin-top: 25px;
+  .provocation__text {
+    margin: 0 125px;
+    margin-top: 40px;
     padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .catalog-countainer__text {
-    margin: 0 350px;
-    margin-top: 25px;
+  .provocation__text {
+    margin: 0 340px;
+    margin-top: 40px;
     padding: 0;
   }
 }

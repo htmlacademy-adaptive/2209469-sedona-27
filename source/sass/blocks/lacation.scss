@@ -1,20 +1,70 @@
 .lacation {
-  width: 320px;
+  position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 10px;
   background-color: #ffffff;
 }
 
-.lacation-image {
+@media (min-width: $tablet-width) {
+  .lacation {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .lacation {
+    width: 1200px;
+  }
+}
+
+.lacation__image {
+  display: flex;
   width: 320px;
   background-color: #ffffff;
 }
 
-.lacation-button {
-  top: 160px;
+@media (min-width: $tablet-width) {
+  .lacation__image {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .lacation__image {
+    width: 1200px;
+  }
+}
+
+
+.lacation__button {
+  position: absolute;
+  top: 155px;
   left: 135px;
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 6px;
   border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.lacation__button::before {
+  display: flex;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #81b3d3;
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .lacation__button {
+    position: absolute;
+    top: 160px;
+    left: 370px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .lacation__button {
+    position: absolute;
+    top: 160px;
+    left: 600px;
+  }
 }

@@ -1,12 +1,21 @@
 .main-footer {
   width: 320px;
   margin: 0;
+  margin-top: 10px;
   padding: 0;
   background-color: #ffffff;
 }
 
-.main-footer__container {
-  margin: 0;
-  padding: 28.5px 77px;
-  padding-bottom: 29.45px;
+@media (min-width: $tablet-width) {
+  .main-footer {
+    display: flex;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    display: flex;
+    width: 1200px;
+  }
 }

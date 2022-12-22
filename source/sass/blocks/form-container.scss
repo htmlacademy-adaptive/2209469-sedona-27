@@ -1,4 +1,18 @@
 .form-container {
   margin: 0;
-  padding: 0;
+  padding: 24px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-container {
+    width: 748px;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-container {
+    width: 1200px;
+    padding: 0 40px;
+  }
 }

@@ -1,8 +1,21 @@
 .search {
   width: 320px;
   margin: 0;
-  padding: 0;
+  padding: 38px 0;
+  padding-bottom: 32px;
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .search {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search {
+    width: 1200px;
+  }
 }
 
 .search__title {
@@ -13,6 +26,22 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .search__title {
+    margin: 0 166px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search__title {
+    margin: 0 383px;
+    padding: 0;
+  }
 }
 
 .search__text {
@@ -20,16 +49,35 @@
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .search__text {
+    margin: 0 163px;
+    margin-top: 25px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search__text {
+    margin: 0 379px;
+    margin-top: 25px;
+    padding: 0;
+  }
 }
 
 .search__link {
   display: block;
-  margin: 32px 18px;
-  margin-bottom: 49px;
-  padding: 16px 49px;
+  margin: 32px 0;
+  margin-bottom: 29px;
+  padding: 16px 10px;
   background-color: #81b3d2;
   color: #ffffff;
   font-family: "PT Sans", sans-serif;
@@ -39,4 +87,18 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .search__link {
+    margin: 32px 160px;
+    margin-bottom: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search__link {
+    margin: 32px 380px;
+    margin-bottom: 29px;
+  }
 }

@@ -1,0 +1,23 @@
+.advantage-image {
+  margin: 0;
+  padding: 0;
+}
+
+.advantage-image__item-image {
+  display: block;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-image__item-image {
+    width: 512px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-image__item-image {
+    width: 800px;
+  }
+}

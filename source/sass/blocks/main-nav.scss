@@ -3,17 +3,126 @@
   padding: 0;
 }
 
-.main-nav__toggle {
-  margin: 0;
-  padding: 0;
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.main-nav__container {
-  margin: 0;
-  padding: 0;
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+}
+
+.main-nav__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__item {
+    width: 153px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__item {
+    width: 240px;
+  }
+}
+
+.main-nav__item-link--current {
+  margin: 0;
+  padding: 17px 90px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__item-link--current {
+    margin: 0;
+    padding: 18px 0;
+    background-color: #ffffff;
+    color: #766357;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__item-link--current {
+    margin: 0;
+    width: 240px;
+    padding: 18px 0;
+    background-color: #ffffff;
+    color: #766357;
+  }
+}
+
+.main-nav__item-link {
+  margin: 0;
+  padding: 17px 90px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__item-link {
+    margin: 0;
+    padding: 18px 0;
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__item-link {
+    margin: 0;
+    padding: 18px 0;
+    background-color: #ffffff;
+    color: #000000;
+  }
 }

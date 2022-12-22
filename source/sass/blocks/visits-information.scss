@@ -1,0 +1,98 @@
+.visits-information {
+  margin: 0;
+  margin-top: 59px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .visits-information {
+    width: 648px;
+    margin: 0;
+    padding: 56px 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .visits-information {
+    width: 960px;
+    margin: 0;
+    padding: 56px 120px;
+  }
+}
+
+.visits-information__title {
+  display: block;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.visits-information__list {
+  display: block;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .visits-information__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .visits-information__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+  }
+}
+
+.visits-information__item {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .visits-information__item {
+    width: 324px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .visits-information__item {
+    width: 190px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.visits-information__checkbox {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.visits-information__input-checkbox {
+  margin: 0;
+  padding: 0;
+}
