@@ -1,4 +1,4 @@
-.lacation {
+.location {
   position: relative;
   margin: 0;
   padding: 0;
@@ -6,37 +6,36 @@
 }
 
 @media (min-width: $tablet-width) {
-  .lacation {
+  .location {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .lacation {
+  .location {
     width: 1200px;
   }
 }
 
-.lacation__image {
+.location__image {
   display: flex;
   width: 320px;
   background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
-  .lacation__image {
+  .location__image {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .lacation__image {
+  .location__image {
     width: 1200px;
   }
 }
 
-
-.lacation__button {
+.location__button {
   position: absolute;
   top: 155px;
   left: 135px;
@@ -45,7 +44,7 @@
   background-color: #ffffff;
 }
 
-.lacation__button::before {
+.location__button::before {
   display: flex;
   padding: 10px;
   border-radius: 50%;
@@ -54,7 +53,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .lacation__button {
+  .location__button {
     position: absolute;
     top: 160px;
     left: 370px;
@@ -62,7 +61,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .lacation__button {
+  .location__button {
     position: absolute;
     top: 160px;
     left: 600px;

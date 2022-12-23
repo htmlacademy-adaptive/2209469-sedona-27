@@ -126,6 +126,13 @@
   }
 }
 
+.photo-gallery__image--current {
+  width: 280px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
 @media (min-width: $tablet-width) {
   .photo-gallery__image--current {
     width: 698px;

@@ -6,13 +6,17 @@
 
 @media (min-width: $tablet-width) {
   .video-block {
-    width: 768px;
+    width: 648px;
+    padding: 40px 60px;
+    padding-top: 66px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .video-block {
-    width: 1200px;
+    width: 800px;
+    padding: 120px 220px;
+    padding-top: 64px;
   }
 }
 
@@ -29,13 +33,13 @@
 
 @media (min-width: $tablet-width) {
   .video-block__button {
-    width: 768px;
+    width: 648px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .video-block__button {
-    width: 1200px;
+    width: 800px;
   }
 }
 
