@@ -1,16 +1,19 @@
-.modal-warning {
-  width: 320px;
+.information {
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
-  .modal-warning {
-    width: 768px;
+  .information {
+    display: flex;
+    flex-wrap: wrap;
+    width: 748px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .modal-warning {
+  .information {
     width: 1200px;
   }
 }

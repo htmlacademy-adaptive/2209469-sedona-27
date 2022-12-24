@@ -1,4 +1,16 @@
-.modal-warning {
+.sent-container {
   width: 320px;
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .sent-container {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sent-container {
+    width: 1200px;
+  }
 }

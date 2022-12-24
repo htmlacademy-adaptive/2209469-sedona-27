@@ -1,0 +1,24 @@
+.main-block {
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-block {
+    display: none;
+    position: absolute;
+    width: 185px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-block {
+    position: absolute;
+    align-items: center;
+    width: 185px;
+  }
+}
+
+.main-logo {
+  margin: 0 auto;
+  padding: 0;
+}

@@ -1,0 +1,22 @@
+.main-title {
+  background-image: url("/source/images/main-image.jpg");
+  background-image: url("/source/images/panel-left.svg");
+  background-image: url("/source/images/panel-right.svg");
+  background-color: #000000;
+  color: #000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-title__image {
+  display: block;
+  margin: auto;
+  padding: 0;
+}
+
+.main-title__page-image {
+  display: block;
+  margin: auto;
+  padding: 0;
+}

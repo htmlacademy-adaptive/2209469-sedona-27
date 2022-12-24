@@ -1,7 +1,23 @@
 .review-countainer {
-  width: 280px;
   margin: 0;
-  padding: 0;
+  padding: 36px 9px;
+  padding-bottom: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .review-countainer {
+    width: 768px;
+    padding: 64px 0;
+    padding-bottom: 102px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-countainer {
+    width: 1200px;
+    padding: 105px 0;
+    padding-bottom: 67px;
+  }
 }
 
 .review-countainer__title {
@@ -12,6 +28,20 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .review-countainer__title {
+    margin: 0 135px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-countainer__title {
+    margin: 0 240px;
+  }
 }
 
 .review-countainer__text {
@@ -22,4 +52,21 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .review-countainer__text {
+    margin: 0 140px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-countainer__text {
+    margin: 0 350px;
+    margin-top: 30px;
+  }
 }

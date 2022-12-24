@@ -1,0 +1,85 @@
+.contact-information {
+  margin: 0;
+  margin-top: 64px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-information {
+    width: 280px;
+    padding: 0 47px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-information {
+    width: 430px;
+    padding: 0 85px;
+  }
+}
+
+.contact-information__title {
+  display: block;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-information__text {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: start;
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 16px;
+  padding: 0;
+}
+
+.contact-information__phone {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-information__input-phone {
+  color: #000000 30%;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: start;
+  margin: 0;
+  padding: 16px;
+  border: none;
+}
+
+.contact-information__email {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-information__input-email {
+  color: #000000 30%;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: start;
+  margin: 0;
+  padding: 16px;
+  border: none;
+}

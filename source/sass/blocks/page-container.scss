@@ -1,16 +1,16 @@
-.modal-warning {
+.page-container {
   width: 320px;
-  background-color: #ffffff;
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {
-  .modal-warning {
+  .page-container {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .modal-warning {
+  .page-container {
     width: 1200px;
   }
 }

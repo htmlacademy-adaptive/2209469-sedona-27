@@ -1,7 +1,36 @@
 .main-logo {
-  background-color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  height: 50px;
+  padding: 0;
+  color: #000000;
 }
 
-.main-logo__logo-image{
+@media (min-width: $tablet-width) {
+  .main-logo {
+    position: absolute;
+    top: 0;
+    left: 293px;
+    width: 185px;
+    margin: 0;
+    padding: 0;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .main-logo {
+    position: absolute;
+    top: 0;
+    left: 510px;
+    width: 185px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.main-logo__image {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
 }

@@ -1,8 +1,30 @@
 .footer-copyright {
-  width: 135px;
+  display: flex;
+  width: 140px;
+  margin: 0 90px;
+  margin-bottom: 23px;
+  padding: 0;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-copyright {
+    margin: 49px 0;
+    margin-left: 100px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-copyright {
+    margin: 49px 0;
+    margin-left: 256px;
+    padding: 0;
+  }
 }
 
 .footer-copyright__text {
+  display: flex;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
@@ -10,6 +32,11 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 6.5px 0;
   margin-right: 12px;
+}
+
+.footer-copyright__image {
+  margin: 0;
+  padding: 0;
 }
