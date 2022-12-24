@@ -43,7 +43,7 @@
 }
 @media (min-width: 1200px) {
   .page-container {
-    width: 1280px;
+    width: 1200px;
   }
 }
 .main-header {
@@ -65,7 +65,7 @@
   .main-logo {
     position: absolute;
     top: 0;
-    left: 290px;
+    left: 293px;
     width: 185px;
     margin: 0;
     padding: 0;
@@ -75,7 +75,7 @@
   .main-logo {
     position: absolute;
     top: 0;
-    left: 555px;
+    left: 510px;
     width: 185px;
     margin: 0;
     padding: 0;
@@ -715,7 +715,7 @@
     margin-bottom: 29px;
   }
 }
-.lacation {
+.location {
   position: relative;
   margin: 0;
   padding: 0;
@@ -723,32 +723,32 @@
 }
 
 @media (min-width: 768px) {
-  .lacation {
+  .location {
     width: 768px;
   }
 }
 @media (min-width: 1200px) {
-  .lacation {
+  .location {
     width: 1200px;
   }
 }
-.lacation__image {
+.location__image {
   display: flex;
   width: 320px;
   background-color: #ffffff;
 }
 
 @media (min-width: 768px) {
-  .lacation__image {
+  .location__image {
     width: 768px;
   }
 }
 @media (min-width: 1200px) {
-  .lacation__image {
+  .location__image {
     width: 1200px;
   }
 }
-.lacation__button {
+.location__button {
   position: absolute;
   top: 155px;
   left: 135px;
@@ -757,7 +757,7 @@
   background-color: #ffffff;
 }
 
-.lacation__button::before {
+.location__button::before {
   display: flex;
   padding: 10px;
   border-radius: 50%;
@@ -766,14 +766,14 @@
 }
 
 @media (min-width: 768px) {
-  .lacation__button {
+  .location__button {
     position: absolute;
     top: 160px;
     left: 370px;
   }
 }
 @media (min-width: 1200px) {
-  .lacation__button {
+  .location__button {
     position: absolute;
     top: 160px;
     left: 600px;
@@ -782,7 +782,6 @@
 .main-footer {
   width: 320px;
   margin: 0;
-  margin-top: 10px;
   padding: 0;
   background-color: #ffffff;
 }
@@ -1835,6 +1834,12 @@
     height: 267px;
   }
 }
+.photo-gallery__image--current {
+  width: 280px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
 @media (min-width: 768px) {
   .photo-gallery__image--current {
     width: 698px;
@@ -2062,12 +2067,16 @@
 
 @media (min-width: 768px) {
   .video-block {
-    width: 768px;
+    width: 648px;
+    padding: 40px 60px;
+    padding-top: 66px;
   }
 }
 @media (min-width: 1200px) {
   .video-block {
-    width: 1200px;
+    width: 800px;
+    padding: 120px 220px;
+    padding-top: 64px;
   }
 }
 .video-block__button {
@@ -2083,12 +2092,12 @@
 
 @media (min-width: 768px) {
   .video-block__button {
-    width: 768px;
+    width: 648px;
   }
 }
 @media (min-width: 1200px) {
   .video-block__button {
-    width: 1200px;
+    width: 800px;
   }
 }
 .video-block__video {
