@@ -3,6 +3,8 @@
   padding: 32px 12px;
   padding-bottom: 30px;
   background-color: #ffffff;
+  background-image: url("/source/images/advantage-panel-left.svg"), url("/source/images//advantage-panel-right.svg");
+  background-position: bottom left, bottom right;
 }
 
 @media (min-width: $tablet-width) {

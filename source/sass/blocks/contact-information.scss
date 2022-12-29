@@ -50,6 +50,8 @@
   display: block;
   margin: 0;
   padding: 0;
+  background-image: url("/source/images/phone-image.svg");
+  background-position: right;
 }
 
 .contact-information__input-phone {
@@ -69,6 +71,8 @@
   display: block;
   margin: 0;
   padding: 0;
+  background-image: url("/source/images/mail-image.svg");
+  background-position: right;
 }
 
 .contact-information__input-email {

@@ -11,31 +11,31 @@
 <body class="page-body">
   <div class="page-container">
     <header class="main-header">
-      <a class="main-logo" href="index.html">
-          <img class="main-logo__image" src="images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
-      </a>
-        <button class="main-toggle" type="button">
-          <img class="main-toggle__menu" src="images/image-menu.svg" width="22" height="22" alt="Открыть меню">
+      <nav class="main-nav main-nav--close main-nav--open main-nav--nojs">
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <img class="main-nav__toggle__menu" src="images/image-menu.svg" width="22" height="22" alt="Открыть меню">
         </button>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link--current" href="catalog.html">Фото и видео</a>
-            </li>
-          </ul>
-            <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="form.html">Форма Отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
-            </li>
-          </ul>
-    </nav>
-  </header>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link--current" href="catalog.html">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
   <main class="main-container">
     <section class="main-title">
@@ -149,7 +149,7 @@
       <section class="video-block">
         <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
       <button class="video-block__button" type="button">
-        <img class="video-block__video" src="images/image-video.jpg" alt="Видеопрезентация Седоны" >
+        <video class="video-block__video" width="800px" poster="images/image-video.jpg" alt="Видеопрезентация Седоны" >
       </button>
     </section>
   </main>
@@ -213,6 +213,7 @@
       </a>
 </footer>
 </div>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
