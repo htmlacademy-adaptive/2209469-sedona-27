@@ -1,22 +1,24 @@
 .main-title {
-  background-image: url("/source/images/main-image.jpg");
-  background-image: url("/source/images/left-panel.svg");
-  background-image: url("/source/images/right-panel.svg");
+  display: flex;
+  margin: 0;
+  padding: 0;
   background-color: #000000;
   color: #000000;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../images/main-panel.svg"), url("../images/main-image.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom;
 }
 
 .main-title__image {
   display: block;
-  margin: auto;
+  margin: 90px auto;
+  margin-bottom: 85px;
   padding: 0;
 }
 
 .main-title__page-image {
   display: block;
-  margin: auto;
+  margin: 96px auto;
+  margin-bottom: 67px;
   padding: 0;
 }

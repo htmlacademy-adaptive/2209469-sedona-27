@@ -50,8 +50,6 @@
   display: block;
   margin: 0;
   padding: 0;
-  background-image: url("/source/images/phone-image.svg");
-  background-position: right;
 }
 
 .contact-information__input-phone {
@@ -65,14 +63,15 @@
   margin: 0;
   padding: 16px;
   border: none;
+  background-image: url("../images/phone-image.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .contact-information__email {
   display: block;
   margin: 0;
   padding: 0;
-  background-image: url("/source/images/mail-image.svg");
-  background-position: right;
 }
 
 .contact-information__input-email {
@@ -86,4 +85,7 @@
   margin: 0;
   padding: 16px;
   border: none;
+  background-image: url("../images/mail-image.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }

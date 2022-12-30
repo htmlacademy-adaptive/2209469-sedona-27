@@ -22,10 +22,21 @@
   display: none;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav--open .main-nav__logo {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav--open .main-nav__logo {
+    display: inline;
+  }
+}
+
 .main-nav--close .main-nav__logo {
   display: block;
   margin: 0 auto;
-  width: 320px;
   height: 50px;
   padding: 0;
   color: #000000;
