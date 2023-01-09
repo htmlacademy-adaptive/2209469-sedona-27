@@ -25,6 +25,81 @@
   }
 }
 
+.service-item--hotel {
+  background-image: url("../images/service-house.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 0;
+  background-size: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .service-item--hotel {
+    background-image: url("../images/service-house.svg");
+    background-repeat: no-repeat;
+    background-position: 90px 45px;
+    background-size: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service-item--hotel {
+    background-image: url("../images/service-house.svg");
+    background-repeat: no-repeat;
+    background-position: 160px 50px;
+    background-size: 77px;
+  }
+}
+
+.servuce-item--food {
+  background-image: url("../images/service-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 0;
+  background-size: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .servuce-item--food {
+    background-image: url("../images/service-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 90px 45px;
+    background-size: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .servuce-item--food {
+    background-image: url("../images/service-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 160px 50px;
+    background-size: 77px;
+  }
+}
+
+.service-item--souvenir {
+  background-image: url("../images/service-souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 0;
+  background-size: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .service-item--souvenir {
+    background-image: url("../images/service-souvenir.svg");
+    background-repeat: no-repeat;
+    background-position: 90px 45px;
+    background-size: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service-item--souvenir {
+    background-image: url("../images/service-souvenir.svg");
+    background-repeat: no-repeat;
+    background-position: 160px 50px;
+    background-size: 77px;
+  }
+}
+
 .service-item__title {
   color: #000000;
   font-family: "PT Sans", sans-serif;

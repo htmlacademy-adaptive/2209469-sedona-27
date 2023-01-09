@@ -17,20 +17,22 @@
   }
 }
 
-.location__image {
-  display: flex;
+.location__map {
+  display: block;
+  border: none;
   width: 320px;
+  height: 350px;
   background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
-  .location__image {
+  .location__map {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .location__image {
+  .location__map {
     width: 1200px;
   }
 }

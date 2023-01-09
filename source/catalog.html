@@ -11,36 +11,36 @@
 <body class="page-body">
   <div class="page-container">
     <header class="main-header">
-      <a class="main-logo" href="index.html">
-          <img class="main-logo__image" src="images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
-      </a>
-        <button class="main-toggle" type="button">
-          <img class="main-toggle__menu" src="images/image-menu.svg" width="22" height="22" alt="Открыть меню">
+      <nav class="main-nav main-nav--close main-nav--open main-nav--nojs">
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="./images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <img class="main-nav__toggle__menu" src="./images/image-menu.svg" width="22" height="22" alt="Открыть меню">
         </button>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link--current" href="catalog.html">Фото и видео</a>
-            </li>
-          </ul>
-            <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="form.html">Форма Отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
-            </li>
-          </ul>
-    </nav>
-  </header>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link--current" href="catalog.html">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
   <main class="main-container">
     <section class="main-title">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-    <img class="main-title__page-image" src="images/image-page.svg" width="229" height="39"
+    <img class="main-title__page-image" src="./images/image-page.svg" width="229" height="39"
       alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой">
     </section>
 
@@ -54,7 +54,7 @@
       <ul class="photo-gallery__list">
         <li class="photo-gallery__item--current">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image--current" src="images/catalog-image-1.jpg" alt="Фотография неродных просторов">
+            <img class="photo-gallery__image--current" src="./images/catalog-image-1.jpg" alt="Фотография неродных просторов">
             </a>
             <div class="photo-gallery__countainer">
             <b class="photo-gallery__title">Неродные просторы</b>
@@ -76,7 +76,7 @@
 
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="images/catalog-image-2.jpg" alt="Фотография местной растительности Седоны">
+            <img class="photo-gallery__image" src="./images/catalog-image-2.jpg" alt="Фотография местной растительности Седоны">
             </a>
             <div class="photo-gallery__countainer">
             <b class="photo-gallery__title">Местная растительность</b>
@@ -98,7 +98,7 @@
 
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="images/catalog-image-3.jpg" alt="Фотография дороги ведущей на север Седоны">
+            <img class="photo-gallery__image" src="./images/catalog-image-3.jpg" alt="Фотография дороги ведущей на север Седоны">
             </a>
             <div class="photo-gallery__countainer">
             <b class="photo-gallery__title">Дорога на север</b>
@@ -120,7 +120,7 @@
 
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="images/catalog-image-4.jpg" alt="Фотография моста дьявола в Седоне">
+            <img class="photo-gallery__image" src="./images/catalog-image-4.jpg" alt="Фотография моста дьявола в Седоне">
             </a>
             <div class="photo-gallery__countainer">
             <b class="photo-gallery__title">Мост дьявола</b>
@@ -137,6 +137,7 @@
             <span class="photo-gallery__like-number">254</span>
           </a>
             </div>
+            </div>
         </li>
       </ul>
     </section>
@@ -149,9 +150,10 @@
       <section class="video-block">
         <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
       <button class="video-block__button" type="button">
-        <img class="video-block__video" src="images/image-video.jpg" alt="Видеопрезентация Седоны" >
+        <svg class="video-block__play" xmlns="http://www.w3.org/2000/svg" width="48" height="54" fill="none" viewBox="0 0 48 54"><path fill="" fill-opacity="" d="M48 27 0 54V0l48 27Z"/></svg>
+         <video class="video-block__video"  poster="./images/image-video.jpg"></video>
       </button>
-    </section>
+     </section>
   </main>
 
   <footer class="main-footer">
@@ -213,6 +215,7 @@
       </a>
 </footer>
 </div>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
