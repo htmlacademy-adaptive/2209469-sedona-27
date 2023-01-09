@@ -64,10 +64,19 @@
   display: none;
 }
 
+@media (min-width: 768px) {
+  .main-nav--open .main-nav__logo {
+    display: inline;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav--open .main-nav__logo {
+    display: inline;
+  }
+}
 .main-nav--close .main-nav__logo {
   display: block;
   margin: 0 auto;
-  width: 320px;
   height: 50px;
   padding: 0;
   color: #000000;
@@ -303,25 +312,27 @@
 }
 
 .main-title {
-  background-image: url("/source/images/main-image.jpg");
-  background-image: url("/source/images/left-panel.svg");
-  background-image: url("/source/images/right-panel.svg");
+  display: flex;
+  margin: 0;
+  padding: 0;
   background-color: #000000;
   color: #000000;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../images/main-panel.svg"), url("../images/main-image.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom;
 }
 
 .main-title__image {
   display: block;
-  margin: auto;
+  margin: 90px auto;
+  margin-bottom: 85px;
   padding: 0;
 }
 
 .main-title__page-image {
   display: block;
-  margin: auto;
+  margin: 96px auto;
+  margin-bottom: 67px;
   padding: 0;
 }
 
@@ -330,8 +341,6 @@
   padding: 32px 12px;
   padding-bottom: 30px;
   background-color: #ffffff;
-  background-image: url("/source/images/advantage-panel-left.svg"), url("/source/images//advantage-panel-right.svg");
-  background-position: bottom left, bottom right;
 }
 
 @media (min-width: 768px) {
@@ -402,7 +411,7 @@
   flex-direction: column;
   background-color: #81b3d2;
   margin: 0;
-  padding: 33px 18px;
+  padding: 75px 18px;
   padding-bottom: 40px;
 }
 
@@ -416,6 +425,22 @@
   .advantage-item {
     width: 400px;
     padding: 58px 0;
+  }
+}
+.advantage-item:nth-child(1) {
+  background-image: url("../images/advantage-panel.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+@media (min-width: 768px) {
+  .advantage-item:nth-child(1) {
+    background-image: none;
+  }
+}
+@media (min-width: 1200px) {
+  .advantage-item:nth-child(1) {
+    background-image: none;
   }
 }
 .advantage-item__title {
@@ -526,17 +551,74 @@
   }
 }
 .service-item--hotel {
-  background-image: url("/source/images/service-house.svg");
+  background-image: url("../images/service-house.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 0;
+  background-size: 39px;
 }
 
+@media (min-width: 768px) {
+  .service-item--hotel {
+    background-image: url("../images/service-house.svg");
+    background-repeat: no-repeat;
+    background-position: 90px 45px;
+    background-size: 77px;
+  }
+}
+@media (min-width: 1200px) {
+  .service-item--hotel {
+    background-image: url("../images/service-house.svg");
+    background-repeat: no-repeat;
+    background-position: 160px 50px;
+    background-size: 77px;
+  }
+}
 .servuce-item--food {
-  background-image: url("/source/images/service-burger.svg");
+  background-image: url("../images/service-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 0;
+  background-size: 39px;
 }
 
+@media (min-width: 768px) {
+  .servuce-item--food {
+    background-image: url("../images/service-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 90px 45px;
+    background-size: 77px;
+  }
+}
+@media (min-width: 1200px) {
+  .servuce-item--food {
+    background-image: url("../images/service-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 160px 50px;
+    background-size: 77px;
+  }
+}
 .service-item--souvenir {
-  background-image: url("/source/images/service-souvenir.svg");
+  background-image: url("../images/service-souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 0;
+  background-size: 39px;
 }
 
+@media (min-width: 768px) {
+  .service-item--souvenir {
+    background-image: url("../images/service-souvenir.svg");
+    background-repeat: no-repeat;
+    background-position: 90px 45px;
+    background-size: 77px;
+  }
+}
+@media (min-width: 1200px) {
+  .service-item--souvenir {
+    background-image: url("../images/service-souvenir.svg");
+    background-repeat: no-repeat;
+    background-position: 160px 50px;
+    background-size: 77px;
+  }
+}
 .service-item__title {
   color: #000000;
   font-family: "PT Sans", sans-serif;
@@ -1213,8 +1295,6 @@
   display: block;
   margin: 0;
   padding: 0;
-  background-image: url("/source/images/phone-image.svg");
-  background-position: right;
 }
 
 .contact-information__input-phone {
@@ -1228,14 +1308,15 @@
   margin: 0;
   padding: 16px;
   border: none;
+  background-image: url("../images/phone-image.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .contact-information__email {
   display: block;
   margin: 0;
   padding: 0;
-  background-image: url("/source/images/mail-image.svg");
-  background-position: right;
 }
 
 .contact-information__input-email {
@@ -1249,6 +1330,9 @@
   margin: 0;
   padding: 16px;
   border: none;
+  background-image: url("../images/mail-image.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .impression-information {
@@ -2150,6 +2234,9 @@
   margin: 0;
   padding: 0 20px;
   padding-top: 38px;
+  background-image: url("../images/image-play.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
@@ -2168,12 +2255,11 @@
 }
 .video-block__button {
   display: block;
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
-  background-image: url("/source/images/image-play.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  cursor: pointer;
   background-color: transparent;
 }
 
@@ -2185,6 +2271,29 @@
 @media (min-width: 1200px) {
   .video-block__button {
     width: 800px;
+  }
+}
+.video-block__play {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 120px;
+  width: 48px;
+  height: 54px;
+  fill: #ffffff;
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+  .video-block__play {
+    top: 175px;
+    left: 290px;
+  }
+}
+@media (min-width: 1200px) {
+  .video-block__play {
+    top: 225px;
+    left: 375px;
   }
 }
 .video-block__video {
