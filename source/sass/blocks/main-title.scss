@@ -4,21 +4,71 @@
   padding: 0;
   background-color: #000000;
   color: #000000;
-  background-image: url("../images/main-panel.svg"), url("../images/main-image.jpg");
+  background-image: url("../images/main-panel.svg"), url("../images/main-page-image/title-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom;
+  background-position: bottom, center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    background-image: url("../images/main-panel.svg"), url("../images/main-page-image/title-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title {
+    background-image: url("../images/main-panel.svg"), url("../images/main-page-image/title-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, center;
+  }
 }
 
 .main-title__image {
   display: block;
-  margin: 90px auto;
+  width: 282px;
+  margin: 90px 19px;
   margin-bottom: 85px;
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .main-title__image {
+    width: 461px;
+    margin: 77px 154px;
+    margin-bottom: 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title__image {
+    width: 460px;
+    margin: 78px 370px;
+    margin-bottom: 160px;
+  }
+}
+
 .main-title__page-image {
   display: block;
-  margin: 96px auto;
-  margin-bottom: 67px;
+  width: 229px;
+  margin: 52px 46px;
+  margin-bottom: 120px;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-title__page-image {
+    width: 457px;
+    margin: 95px 156px;
+    margin-bottom: 117px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title__page-image {
+    width: 460px;
+    margin: 101px 370px;
+    margin-bottom: 121px;
+  }
 }

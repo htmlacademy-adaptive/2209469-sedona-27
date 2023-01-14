@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="./favicon-32.ico">
+  <link rel="icon" href="./images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/favicons/icon-180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -40,8 +44,12 @@
     <main class="main-container">
       <section class="main-title">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img class="main-title__image" src="./images/image-main-page.svg" width="282" height="214"
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./images/page-image/main-page-desktop.svg">
+           <source media="(min-width: 768px)" srcset="./images/page-image/main-page-tablet.svg">
+        <img class="main-title__image" src="./images/page-image/main-page-mobile.svg" width="282" height="214"
           alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой">
+        </picture>
       </section>
 
       <section class="description">
@@ -58,8 +66,12 @@
             <p class="advantage-item__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </li>
           <li class="advantage-image">
-            <img class="advantage-image__item-image" src="./images/image-sedona-city.jpg" width="520" height="260"
-              alt="Городок в Седоне">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/main-page-image/city-desktop@1x.jpg 1x, ./images/main-page-image/city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/main-page-image/city-tablet@1x.jpg 1x, ./images/main-page-image/city-tablet@2x.jpg 2x">
+            <img class="advantage-image__item-image" src="./images/main-page-image/city-mobile@1x.jpg" width="520" height="260"
+            alt="Городок в Седоне" srcset="./images/main-page-image/city-mobile@2x.jpg 2x">
+            </picture>
           </li>
           <li class="service-item service-item--hotel">
             <h3 class="service-item__title">ЖИЛЬЕ</h3>
@@ -79,8 +91,12 @@
             <p class="advantage-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </li>
           <li class="advantage-image">
-            <img class="advantage-image__item-image" src="./images/image-bridge.jpg" width="520" height="260"
-              alt="Городок в Седоне">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="./images/main-page-image/bridge-desktop@1x.jpg 1x, ./images/main-page-image/bridge-desktop@2x.jpg 2x">
+             <source media="(min-width: 768px)" srcset="./images/main-page-image/bridge-tablet@1x.jpg 1x, ./images/main-page-image/bridge-tablet@2x.jpg 2x">
+            <img class="advantage-image__item-image" src="./images/main-page-image/bridge-mobile@1x.jpg" width="520" height="260"
+              alt="Городок в Седоне" srcset="./images/main-page-image/bridge-mobile@2x.jpg 2x">
+              <picture>
           </li>
           <li class="advantage-bottom">
             <h3 class="advantage-bottom__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
