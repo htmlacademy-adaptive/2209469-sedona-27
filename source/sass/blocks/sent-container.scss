@@ -1,93 +1,125 @@
 .sent-container {
   display: flex;
+  width: 320px;
   flex-direction: column;
-  margin: 0;
-  padding: 39px 0;
-  padding-bottom: 0;
+  margin: auto;
+  margin-top: 166px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
 }
 
 @media (min-width: $tablet-width) {
   .sent-container {
     width: 640px;
-    margin: 0 auto;
+    margin: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .sent-container {
     width: 640px;
-    margin: 0 auto;
+    margin: auto;
+
   }
 }
 
 .sent-container__title {
   color: #000000;
-  font-family: "PT Sans", sans-serif;
-  font-size: 21px;
+  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 0 52px;
+  margin-top: 39px;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .sent-container__title {
+    font-size: 30px;
+    margin-top: 79px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sent-container__title {
+    margin-top: 32px;
+  }
 }
 
 .sent-container__text {
   color: #333333;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
+  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
-  margin-top: 40px;
+  margin: 0 52px;
+  margin-top: 24px;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .sent-container__text {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sent-container__text {
+    margin-top: 34px;
+  }
 }
 
 .sent-container__close {
   display: flex;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 52px;
   padding: 20px;
   background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
   .sent-container__close {
-    padding: 50px;
+    padding: 45px;
+    margin-top: 51px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .sent-container {
-    padding: 50px;
+  .sent-container__close {
+
   }
 }
 
 .sent-container__link {
   color: #ffffff;
   background-color: #81b3d2;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  padding: 18px 60px;
+  padding: 16px 76px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .sent-container__link {
-    padding: 18px 100px;
+    font-size: 21px;
+    padding: 16px 155px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .sent-container__link {
-    padding: 18px 100px;
+    padding: 16px 155px;
     margin: 0 auto;
   }
 }

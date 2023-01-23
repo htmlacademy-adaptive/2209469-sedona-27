@@ -1,6 +1,6 @@
 .review-countainer {
   margin: 0;
-  padding: 36px 9px;
+  padding: 37px 9px;
   padding-bottom: 28px;
 }
 
@@ -15,38 +15,39 @@
 @media (min-width: $desktop-width) {
   .review-countainer {
     width: 1200px;
-    padding: 105px 0;
+    padding: 114px 0;
     padding-bottom: 67px;
   }
 }
 
 .review-countainer__title {
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 0 45px;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .review-countainer__title {
-    margin: 0 135px;
+    margin: 0 190px;
+    font-size: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review-countainer__title {
-    margin: 0 240px;
+    margin: 0 300px;
   }
 }
 
 .review-countainer__text {
   color: #333333;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -59,14 +60,16 @@
 
 @media (min-width: $tablet-width) {
   .review-countainer__text {
-    margin: 0 140px;
-    margin-top: 20px;
+    margin: 0 168px;
+    margin-top: 22px;
+    line-height: 23px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review-countainer__text {
-    margin: 0 350px;
-    margin-top: 30px;
+    margin: 0 380px;
+    margin-top: 29px;
+    line-height: 23px;
   }
 }

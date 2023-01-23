@@ -1,48 +1,81 @@
 .personal-information {
+  border-top: 2px solid #e5e5e5;
   margin: 0;
-  padding: 0;
+  padding: 24px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .personal-information {
+    border-top: none;
+    border-right: 2px solid #e5e5e5;
     width: 280px;
-    padding: 0 47px;
+    padding: 0 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .personal-information {
-    width: 430px;
-    padding: 0 85px;
+    width: 490px;
+    padding: 0 61px;
   }
 }
 
 .personal-information__title {
   display: block;
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 0 45px;
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .personal-information__title {
+    font-size: 21px;
+    margin: 0;
+    margin-left: 48px;
+    margin-top: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal-information__title {
+    margin-left: 120px;
+  }
+}
+
+
 .personal-information__text {
   color: #333333;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: start;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 18px;
   margin-left: 16px;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .personal-information__text {
+    margin-top: 20px;
+    margin-left: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal-information__text {
+    margin-left: 75px;
+  }
+}
+
 
 .personal-information__name {
   display: block;
@@ -53,12 +86,28 @@
 .personal-information__input-name {
   color: #000000;
   background-color: #f2f2f2;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: start;
+  width: 248px;
   margin: 0;
   padding: 16px;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .personal-information__input-name {
+    margin-top: 1px;
+    margin-left: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal-information__input-name {
+    width: 398px;
+    margin: 0;
+    margin-left: 58px;
+  }
 }

@@ -1,14 +1,14 @@
 .description {
   margin: 0;
-  padding: 32px 12px;
-  padding-bottom: 30px;
+  padding: 35px 25px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .description {
     margin: 0;
-    padding: 47px 75px;
+    padding: 49px 127px;
     padding-bottom: 55px;
   }
 }
@@ -16,8 +16,8 @@
 @media (min-width: $desktop-width) {
   .description {
     margin: 0;
-    padding: 47px 331px;
-    padding-bottom: 55px;
+    padding: 60px 250px;
+    padding-bottom: 44px;
   }
 }
 
@@ -25,7 +25,7 @@
   margin: 0;
   padding: 0;
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -33,14 +33,43 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .description__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__title {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0 85px;
+  }
+}
+
 .description__text {
   margin: 0;
-  margin-top: 32px;
+  margin-top: 35px;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .description__text {
+    margin: 0;
+    margin-top: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }

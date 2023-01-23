@@ -1,72 +1,82 @@
 .warning-container {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 45px 0;
-  padding-bottom: 35px;
+  width: 320px;
+  margin: auto;
+  margin-top: 45px;
+  padding: 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
 }
 
 @media (min-width: $tablet-width) {
   .warning-container {
-    width: 450px;
+    width: 400px;
     margin: 0 auto;
+    margin-top: 146px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .warning-container {
-    width: 450px;
+    width: 400px;
     margin: 0 auto;
+    margin-top: 89px;
   }
 }
 
 .warning-container__title {
   color: #000000;
-  font-family: "PT Sans", sans-serif;
-  font-size: 21px;
+  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 0 30px;
+  margin-top: 44px;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .warning-container__title {
-    margin: 0 20px;
+    margin: 0 90px;
+    margin-top: 48px;
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .warning-container__title {
-    margin: 0 20px;
+    margin: 0 80px;
+    margin-top: 47px;
   }
 }
 
 .warning-container__text {
   color: #333333;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
+  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
-  margin-top: 40px;
+  margin: 0 42px;
+  margin-top: 25px;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .warning-container__text {
-    margin: 0 20px;
-    margin-top: 40px;
+    margin: 0 45px;
+    margin-top: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .warning-container__text {
-    width: 400px;
+    margin-top: 24px;
   }
 }
 
@@ -74,15 +84,29 @@
   display: block;
   color: #ffffff;
   background-color: #81b3d2;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  margin: 0 70px;
-  margin-top: 28px;
-  padding: 18px;
+  margin: 28px 70px;
+  margin-bottom: 30px;
+  padding: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .warning-container__link {
+    margin: 47px 64px;
+    margin-bottom: 49px;
+    padding: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .warning-container__link {
+    margin: 47px 63px;
+  }
 }
 

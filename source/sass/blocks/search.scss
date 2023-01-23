@@ -1,13 +1,15 @@
 .search {
   width: 320px;
   margin: 0;
-  padding: 38px 0;
+  padding: 39px 0;
   padding-bottom: 32px;
   background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .search {
+    padding: 0;
+    padding-top: 61px;
     width: 768px;
   }
 }
@@ -20,18 +22,20 @@
 
 .search__title {
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 0 30px;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .search__title {
+    font-size: 30px;
+    line-height: 26px;
     margin: 0 166px;
     padding: 0;
   }
@@ -39,6 +43,8 @@
 
 @media (min-width: $desktop-width) {
   .search__title {
+    font-size: 30px;
+    line-height: 26px;
     margin: 0 383px;
     padding: 0;
   }
@@ -46,41 +52,46 @@
 
 .search__text {
   color: #333333;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
-  margin-top: 25px;
+  margin: 0 20px;
+  margin-top: 20px;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .search__text {
-    margin: 0 163px;
-    margin-top: 25px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 156px;
+    margin-top: 29px;
     padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .search__text {
+    font-size: 14px;
+    line-height: 24px;
     margin: 0 379px;
-    margin-top: 25px;
+    margin-top: 28px;
     padding: 0;
   }
 }
 
 .search__link {
   display: block;
-  margin: 32px 0;
-  margin-bottom: 29px;
+  margin: 32px 17px;
+  margin-bottom: 17px;
   padding: 16px 10px;
+  width: 264px;
   background-color: #81b3d2;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -91,14 +102,15 @@
 
 @media (min-width: $tablet-width) {
   .search__link {
-    margin: 32px 160px;
-    margin-bottom: 29px;
+    width: 439px;
+    margin: 38px 155px;
+    margin-bottom: 58px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .search__link {
-    margin: 32px 380px;
-    margin-bottom: 29px;
+    margin: 43px 369px;
+    margin-bottom: 66px;
   }
 }

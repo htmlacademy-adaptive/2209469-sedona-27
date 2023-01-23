@@ -2,28 +2,32 @@
   flex-direction: column;
   background-color: #eeeeee;
   margin: 0;
-  padding: 24px 10px;
+  padding: 24px 33px;
   padding-bottom: 28px;
+  order: 2;
 }
 
 @media (min-width: $tablet-width) {
   .advantage-bottom {
     width: 236px;
     margin: 0;
-    padding: 52px 10px;
+    padding: 54px 10px;
+    padding-bottom: 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantage-bottom {
     width: 380px;
-    padding: 52px 10px;
+    padding: 65px 10px;
+    padding-bottom: 41px;
   }
 }
 
+
 .advantage-bottom__title {
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -35,6 +39,8 @@
 
 @media (min-width: $tablet-width) {
   .advantage-bottom__title {
+    font-size: 21px;
+    line-height: 26px;
     margin: 0 40px;
     padding: 0;
   }
@@ -42,39 +48,16 @@
 
 @media (min-width: $desktop-width) {
   .advantage-bottom__title {
-    margin: 0 60px;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0 118px;
     padding: 0;
   }
 }
 
-.advantage-bottom__title::before {
-  display: flex;
-  position: relative;
-  top: 145px;
-  left: 10px;
-  width: 284px;
-  height: 1px;
-  background-color: #d6d6d6;
-  border: none;
-  content: "";
-}
-
-
-@media (min-width: $tablet-width) {
-  .advantage-bottom__title::before {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantage-bottom__title::before {
-    display: none;
-  }
-}
-
-.advantage-bottom__number {
+.advantage-bottom__text-number {
   color: #333333;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -85,9 +68,23 @@
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .advantage-bottom__text-number {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-bottom__text-number {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
 .advantage-bottom__text {
   color: #333333;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -100,17 +97,101 @@
 
 @media (min-width: $tablet-width) {
   .advantage-bottom__text {
-    margin: 0;
-    margin-top: 17px;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 20px;
+    margin-top: 24px;
     padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantage-bottom__text {
-    margin: 0 20px;
-    margin-top: 17px;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 30px;
+    margin-top: 25px;
     padding: 0;
   }
 }
 
+.advantage-bottom--number4 {
+  flex-direction: column;
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 17px 33px;
+  padding-bottom: 28px;
+}
+
+.advantage-bottom--number4::before {
+  display: flex;
+  position: relative;
+  top: 142px;
+  right: 15px;
+  width: 284px;
+  height: 2px;
+  background-color: #d6d6d6;
+  border: none;
+  content: "";
+}
+
+.advantage-bottom--number4::after {
+  display: flex;
+  position: relative;
+  top: -145px;
+  right: 15px;
+  width: 284px;
+  height: 2px;
+  background-color: #d6d6d6;
+  border: none;
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-bottom--number4 {
+    padding: 43px 10px;
+    padding-bottom: 32px;
+  }
+
+  .advantage-bottom--number4::after {
+    display: none;
+
+    .advantage-bottom--number4::before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-bottom--number4::before {
+    display: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .advantage-bottom--number4 {
+    padding: 54px 10px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-bottom--number4 .advantage-bottom__text {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 39px;
+    margin-top: 25px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-bottom--number4 .advantage-bottom__text {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 57px;
+    margin-top: 25px;
+    padding: 0;
+  }
+}

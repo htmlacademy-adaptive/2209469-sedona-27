@@ -1,16 +1,9 @@
-.sent-container {
-  width: 320px;
-  background-color: #ffffff;
-}
-
-@media (min-width: $tablet-width) {
-  .sent-container {
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .sent-container {
-    width: 1200px;
-  }
+.modal-sent {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
 }

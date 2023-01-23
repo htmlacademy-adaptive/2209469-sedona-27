@@ -1,6 +1,6 @@
 .form-container {
   margin: 0;
-  padding: 24px 20px;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,6 +13,6 @@
 @media (min-width: $desktop-width) {
   .form-container {
     width: 1200px;
-    padding: 0 40px;
+    padding: 0;
   }
 }

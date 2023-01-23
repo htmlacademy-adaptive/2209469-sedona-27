@@ -1,15 +1,14 @@
 .provocation {
   margin: 0;
   padding: 0 12px;
-  padding-top: 17px;
 }
 
 @media (min-width: $tablet-width) {
   .provocation {
     width: 768px;
     margin: 0;
-    padding: 58px 0;
-    padding-bottom: 66px;
+    padding: 56px 0;
+    padding-bottom: 41px;
   }
 }
 
@@ -17,26 +16,28 @@
   .provocation {
     width: 1200px;
     margin: 0;
-    padding: 58px 0;
-    padding-bottom: 66px;
+    padding: 60px 0;
+    padding-bottom: 23px;
   }
 }
 
-
 .provocation__title {
   color: #000000;
-  font-family: "PT Sans", sans-serif;
-  font-size: 21px;
+  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .provocation__title {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
     margin: 0 140px;
     padding: 0;
   }
@@ -44,36 +45,36 @@
 
 @media (min-width: $desktop-width) {
   .provocation__title {
-    margin: 0 240px;
+    margin: 0 320px;
     padding: 0;
   }
 }
 
 .provocation__text {
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 22px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-top: 40px;
-  padding: 0;
+  margin-top: 25px;
+  padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .provocation__text {
-    margin: 0 125px;
-    margin-top: 40px;
+    margin: 0 160px;
+    margin-top: 30px;
     padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .provocation__text {
-    margin: 0 340px;
-    margin-top: 40px;
+    margin: 0 372px;
+    margin-top: 32px;
     padding: 0;
   }
 }
