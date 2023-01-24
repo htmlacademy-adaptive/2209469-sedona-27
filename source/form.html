@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/favicons/icon-180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -25,8 +29,6 @@
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="catalog.html">Фото и видео</a>
           </li>
-        </ul>
-        <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__item-link--current" href="form.html">Форма Отзыва</a>
           </li>
@@ -40,8 +42,12 @@
   <main class="main-container">
     <section class="main-title">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <img class="main-title__page-image" src="./images/image-page.svg" width="229" height="39"
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./images/page-image/page-desktop.svg">
+         <source media="(min-width: 768px)" srcset="./images/page-image/page-tablet.svg">
+      <img class="main-title__image" src="./images/page-image/page-mobile.svg" width="229" height="39"
         alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой">
+      </picture>
       </section>
 
     <section class="review-countainer">
@@ -121,7 +127,7 @@
               <label class="visits-information__checkbox">
                 <input class="visits-information__input-checkbox" type="checkbox" name="Гора-Колокол" checked>
                 <span class="control-mark checkbox"></span>
-                <span class="control-label">Гора-Колоколе</span>
+                <span class="control-label">Гора-Колокол</span>
               </label>
             </li>
             <li class="visits-information__item">
@@ -221,12 +227,12 @@
   <section class="modal-sent">
     <div class="sent-container">
       <h2 class="sent-container__title">Ваш отзыв отправлен!</h2>
-      <p class="sent-container__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
+      <p class="sent-container__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>  В ближайшее время мы опубликуем
         его на сайте.</p>
-    </div>
     <div class="sent-container__close">
       <a class="sent-container__link" href="form.html">ЗАКРЫТЬ ОКНО</a>
     </div>
+  </div>
   </section>
   </div>
   <script src="./js/script.js"></script>

@@ -1,49 +1,80 @@
 .contact-information {
+  border-top: 1px solid #e5e5e5;
   margin: 0;
-  margin-top: 64px;
-  padding: 0;
+  margin-top: 12px;
+  padding: 24px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .contact-information {
-    width: 280px;
-    padding: 0 47px;
+    border-top: none;
+    width: 325px;
+    padding: 0 25px;
     margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contact-information {
-    width: 430px;
-    padding: 0 85px;
+    width: 480px;
+    padding: 0 53px;
+    border-bottom: none;
   }
 }
 
 .contact-information__title {
   display: block;
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 0 15px;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-information__title {
+    font-size: 21px;
+    margin: 0;
+    margin-right: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-information__title {
+    margin-right: 124px;
+  }
 }
 
 .contact-information__text {
   color: #333333;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: start;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 17px;
   margin-left: 16px;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-information__text {
+    margin-top: 24px;
+    margin-left: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-information__text {
+    margin-top: 23px;
+    margin-left: 29px;
+  }
 }
 
 .contact-information__phone {
@@ -55,17 +86,33 @@
 .contact-information__input-phone {
   color: #000000 30%;
   background-color: #f2f2f2;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: start;
+  width: 248px;
   margin: 0;
-  padding: 16px;
+  padding: 17px;
   border: none;
   background-image: url("../images/phone-image.svg");
   background-position: right;
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-information__input-phone {
+    margin-left: 22px;
+    padding: 16px 17px;
+    width: 246px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-information__input-phone {
+    width: 368px;
+    margin-left: 11px;
+  }
 }
 
 .contact-information__email {
@@ -77,15 +124,31 @@
 .contact-information__input-email {
   color: #000000 30%;
   background-color: #f2f2f2;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: start;
+  width: 248px;
   margin: 0;
   padding: 16px;
   border: none;
   background-image: url("../images/mail-image.svg");
   background-position: right;
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-information__input-email {
+    margin-left: 22px;
+    padding: 16px 17px;
+    width: 246px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-information__input-email {
+    width: 368px;
+    margin-left: 11px;
+  }
 }

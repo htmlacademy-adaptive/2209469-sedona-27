@@ -9,8 +9,9 @@
 
 @media (min-width: $tablet-width) {
   .footer-copyright {
-    margin: 49px 0;
-    margin-left: 100px;
+    margin: 45px 0;
+    margin-bottom: 40px;
+    margin-left: 71px;
     padding: 0;
   }
 }
@@ -18,8 +19,8 @@
 @media (min-width: $desktop-width) {
   .footer-copyright {
     width: 237px;
-    margin: 49px 0;
-    margin-left: 256px;
+    margin: 44px 0;
+    margin-left: 224px;
     padding: 0;
   }
 }
@@ -27,13 +28,13 @@
 .footer-copyright__text {
   display: flex;
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 6.5px 0;
+  margin: 6px 5px;
   margin-right: 12px;
 }
 

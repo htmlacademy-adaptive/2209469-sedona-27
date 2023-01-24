@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="fonts/ptsans.woff" rel="preload" as="font">
+  <link href="fonts/opensans.woff2" rel="preload" as="font">
+  <link href="fonts/ptsansbold.woff" rel="preload" as="font">
+  <link href="fonts/opensansbold.woff2" rel="preload" as="font">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/favicons/icon-180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -16,7 +24,7 @@
           <img class="main-nav__logo-image" src="./images/image-logo.svg" width="185" height="96" alt="Логотип Седона».">
         </a>
         <button class="main-nav__toggle" type="button">
-          <img class="main-nav__toggle__menu" src="./images/image-menu.svg" width="22" height="22" alt="Открыть меню">
+          <img class="main-nav__toggle__menu" src="./images/image-menu.svg" width="23" height="24" alt="Открыть меню">
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -25,8 +33,6 @@
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="catalog.html">Фото и видео</a>
           </li>
-        </ul>
-        <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="form.html">Форма Отзыва</a>
           </li>
@@ -38,10 +44,14 @@
     </header>
 
     <main class="main-container">
-      <section class="main-title">
+      <section class="page-title">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img class="main-title__image" src="./images/image-main-page.svg" width="282" height="214"
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./images/page-image/main-page-desktop.svg">
+           <source media="(min-width: 768px)" srcset="./images/page-image/main-page-tablet.svg">
+        <img class="page-title__image" src="./images/page-image/main-page-mobile.svg" width="282" height="214"
           alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой">
+        </picture>
       </section>
 
       <section class="description">
@@ -54,18 +64,22 @@
         <ul class="advantage__list">
           <li class="advantage-item">
             <h3 class="advantage-item__title">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <p class="advantage-item__number">— №1 —</p>
+            <p class="advantage-item__text-number">— №1 —</p>
             <p class="advantage-item__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </li>
           <li class="advantage-image">
-            <img class="advantage-image__item-image" src="./images/image-sedona-city.jpg" width="520" height="260"
-              alt="Городок в Седоне">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/main-page-image/city-desktop@1x.jpg 1x, ./images/main-page-image/city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/main-page-image/city-tablet@1x.jpg 1x, ./images/main-page-image/city-tablet@2x.jpg 2x">
+            <img class="advantage-image__item-image" src="./images/main-page-image/city-mobile@1x.jpg" width="520" height="260"
+            alt="Городок в Седоне" srcset="./images/main-page-image/city-mobile@2x.jpg 2x">
+            </picture>
           </li>
           <li class="service-item service-item--hotel">
             <h3 class="service-item__title">ЖИЛЬЕ</h3>
             <p class="service-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="service-item servuce-item--food">
+          <li class="service-item service-item--food">
             <h3 class="service-item__title">ЕДА</h3>
             <p class="service-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
@@ -73,28 +87,32 @@
             <h3 class="service-item__title">СУВЕНИРЫ</h3>
             <p class="service-item__text">Не только китайского, но и местного производства!</p>
           </li>
-          <li class="advantage-item">
+          <li class="advantage-item advantage-item--number2">
             <h3 class="advantage-item__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-            <p class="advantage-item__number">— №2 —</p>
+            <p class="advantage-item__text-number">— №2 —</p>
             <p class="advantage-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </li>
           <li class="advantage-image">
-            <img class="advantage-image__item-image" src="./images/image-bridge.jpg" width="520" height="260"
-              alt="Городок в Седоне">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="./images/main-page-image/bridge-desktop@1x.jpg 1x, ./images/main-page-image/bridge-desktop@2x.jpg 2x">
+             <source media="(min-width: 768px)" srcset="./images/main-page-image/bridge-tablet@1x.jpg 1x, ./images/main-page-image/bridge-tablet@2x.jpg 2x">
+            <img class="advantage-image__item-image" src="./images/main-page-image/bridge-mobile@1x.jpg" width="520" height="260"
+              alt="Городок в Седоне" srcset="./images/main-page-image/bridge-mobile@2x.jpg 2x">
+              <picture>
           </li>
           <li class="advantage-bottom">
             <h3 class="advantage-bottom__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <p class="advantage-bottom__number">— №3 —</p>
+            <p class="advantage-bottom__text-number">— №3 —</p>
             <p class="advantage-bottom__text">Все интересные места находятся очень близко</p>
           </li>
-          <li class="advantage-bottom">
+          <li class="advantage-bottom advantage-bottom--number4">
             <h3 class="advantage-bottom__title">КРАСИВАЯ ДОРОГА</h3>
-            <p class="advantage-bottom__number">— №4 —</p>
+            <p class="advantage-bottom__text-number">— №4 —</p>
             <p class="advantage-bottom__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantage-bottom">
             <h3 class="advantage-bottom__title">МАЛО ТУРИСТОВ</h3>
-            <p class="advantage-bottom__number">— №5 —</p>
+            <p class="advantage-bottom__text-number">— №5 —</p>
             <p class="advantage-bottom__text">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
@@ -112,7 +130,6 @@
           src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d351511.91044226626!2d-111.72303916274133!3d35.06211699334349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x872d9ab6ef1fe38f%3A0x11f8fd1d5b2eceb6!2zUG93ZXJsaW5lIFJkLCBGbGFnc3RhZmYsIEFaIDg2MDAxLCDQodCo0JA!3m2!1d35.1165374!2d-111.68600629999999!5e0!3m2!1sru!2sru!4v1672056645108!5m2!1sru!2sru"
           width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <button class="location__button" type="button"></button>
       </section>
     </main>
 

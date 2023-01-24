@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/favicons/icon-180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -25,8 +29,6 @@
           <li class="main-nav__item">
             <a class="main-nav__item-link--current" href="catalog.html">Фото и видео</a>
           </li>
-        </ul>
-        <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="form.html">Форма Отзыва</a>
           </li>
@@ -40,8 +42,12 @@
   <main class="main-container">
     <section class="main-title">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-    <img class="main-title__page-image" src="./images/image-page.svg" width="229" height="39"
+    <picture>
+      <source media="(min-width: 1200px)" srcset="./images/page-image/page-desktop.svg">
+       <source media="(min-width: 768px)" srcset="./images/page-image/page-tablet.svg">
+    <img class="main-title__image" src="./images/page-image/page-mobile.svg" width="229" height="39"
       alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой">
+    </picture>
     </section>
 
     <section class="catalog-countainer">
@@ -54,12 +60,16 @@
       <ul class="photo-gallery__list">
         <li class="photo-gallery__item--current">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image--current" src="./images/catalog-image-1.jpg" alt="Фотография неродных просторов">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/catalog-image/photo-1-desktop@1x.jpg 1x, ./images/catalog-image/photo-1-tablet@2x.jpg 2x">
+               <source media="(min-width: 768px)" srcset="./images/catalog-image/photo-1-tablet@1x.jpg 1x, ./images/catalog-image/photo-1-tablet@2x.jpg 2x">
+            <img class="photo-gallery__image--current" src="./images/catalog-image/photo-1-mobile@1x.jpg" alt="Фотография неродных просторов" width="280" height="280" srcset="./images/catalog-image/photo-1-mobile@2x.jpg 2x">
+            </picture>
             </a>
             <div class="photo-gallery__countainer">
             <b class="photo-gallery__title">Неродные просторы</b>
             <p class="photo-gallery__text">Автор фото: Борис</p>
-            <div class="photo-gllery__like">
+            <div class="photo-gallery__like">
           <a class="photo-gallery__link-like" href="#">
             <svg class="photo-gallery__image-like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="" viewBox="0 0 23 21">
               <path fill=""
@@ -76,12 +86,16 @@
 
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="./images/catalog-image-2.jpg" alt="Фотография местной растительности Седоны">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="./images/catalog-image/photo-2-desktop@1x.jpg 1x, ./images/catalog-image/photo-2-tablet@2x.jpg 2x" width="280" height="280">
+            <source media="(min-width: 768px)" srcset="./images/catalog-image/photo-2-tablet@1x.jpg 1x, ./images/catalog-image/photo-2-tablet@2x.jpg 2x">
+            <img class="photo-gallery__image" src="./images/catalog-image/photo-2-mobile@1x.jpg" alt="Фотография местной растительности Седоны" srcset="./images/catalog-image/photo-2-mobile@2x.jpg 2x">
+            </picture>
             </a>
             <div class="photo-gallery__countainer">
             <b class="photo-gallery__title">Местная растительность</b>
             <p class="photo-gallery__text">Автор фото: Сергей</p>
-            <div class="photo-gllery__like">
+            <div class="photo-gallery__like">
           <a class="photo-gallery__link-like" href="#">
             <svg class="photo-gallery__image-like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="" viewBox="0 0 23 21">
               <path fill=""
@@ -98,12 +112,16 @@
 
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="./images/catalog-image-3.jpg" alt="Фотография дороги ведущей на север Седоны">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/catalog-image/photo-3-desktop@1x.jpg 1x, ./images/catalog-image/photo-3-tablet@2x.jpg 2x" width="280" height="280">
+              <source media="(min-width: 768px)" srcset="./images/catalog-image/photo-3-tablet@1x.jpg 1x, ./images/catalog-image/photo-3-tablet@2x.jpg 2x">
+              <img class="photo-gallery__image" src="./images/catalog-image/photo-3-mobile@1x.jpg" alt="Фотография дороги ведущей на север Седоны" srcset="./images/catalog-image/photo-3-mobile@2x.jpg 2x">
+              </picture>
             </a>
             <div class="photo-gallery__countainer">
             <b class="photo-gallery__title">Дорога на север</b>
             <p class="photo-gallery__text">Автор фото: Петр</p>
-            <div class="photo-gllery__like">
+            <div class="photo-gallery__like">
           <a class="photo-gallery__link-like" href="#">
             <svg class="photo-gallery__image-like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="" viewBox="0 0 23 21">
               <path fill=""
@@ -120,12 +138,16 @@
 
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="./images/catalog-image-4.jpg" alt="Фотография моста дьявола в Седоне">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/catalog-image/photo-4-desktop@1x.jpg 1x, ./images/catalog-image/photo-4-tablet@2x.jpg 2x" width="280" height="280">
+              <source media="(min-width: 768px)" srcset="./images/catalog-image/photo-4-tablet@1x.jpg 1x, ./images/catalog-image/photo-4-tablet@2x.jpg 2x">
+              <img class="photo-gallery__image" src="./images/catalog-image/photo-4-mobile@1x.jpg" alt="Фотография моста дьявола в Седоне" srcset="./images/catalog-image/photo-4-mobile@2x.jpg 2x">
+              </picture>
             </a>
             <div class="photo-gallery__countainer">
             <b class="photo-gallery__title">Мост дьявола</b>
             <p class="photo-gallery__text">Автор фото: Антон</p>
-            <div class="photo-gllery__like">
+            <div class="photo-gallery__like">
           <a class="photo-gallery__link-like" href="#">
             <svg class="photo-gallery__image-like" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="" viewBox="0 0 23 21">
               <path fill=""

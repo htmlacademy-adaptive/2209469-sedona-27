@@ -4,21 +4,72 @@
   padding: 0;
   background-color: #000000;
   color: #000000;
-  background-image: url("../images/main-panel.svg"), url("../images/main-image.jpg");
+  background-image: url("../images/mobile-panel.svg"), url("../images/main-page-image/main-image-mobile@1x.jpg");
+  background-size: 329px auto;
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom;
+  background-position: bottom, -3px -58px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/mobile-panel.svg"), url("../images/main-page-image/main-image-mobile@2x.jpg");
+    background-size: 389px auto;
+    background-position: bottom;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    background-image: url("../images/tablet-panel.svg"), url("../images/main-page-image/main-image-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 768px auto;
+    background-position: bottom, 0 49px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/tablet-panel.svg"), url("../images/main-page-image/main-image-tablet@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 768px auto;
+      background-position: bottom, 0 49px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title {
+    background-image: url("../images/desktop-panel.svg"), url("../images/main-page-image/main-image-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1200px auto;
+    background-position: bottom, 0 57px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/desktop-panel.svg"), url("../images/main-page-image/main-image-desktop@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 1200px auto;
+      background-position: bottom, 0 57px;
+    }
+  }
 }
 
 .main-title__image {
   display: block;
-  margin: 90px auto;
-  margin-bottom: 85px;
+  width: 229px;
+  margin: 52px 46px;
+  margin-bottom: 67px;
   padding: 0;
 }
 
-.main-title__page-image {
-  display: block;
-  margin: 96px auto;
-  margin-bottom: 67px;
-  padding: 0;
+@media (min-width: $tablet-width) {
+  .main-title__image {
+    width: 457px;
+    height: 77px;
+    margin: 150px 156px;
+    margin-bottom: 119px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title__image {
+    width: 460px;
+    height: 79px;
+    margin: 156px 370px;
+    margin-bottom: 121px;
+  }
 }

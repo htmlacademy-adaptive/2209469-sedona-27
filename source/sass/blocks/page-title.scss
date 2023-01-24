@@ -1,0 +1,74 @@
+.page-title {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #000000;
+  background-image: url("../images/mobile-panel.svg"), url("../images/main-page-image/title-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/mobile-panel.svg"), url("../images/main-page-image/title-mobile@2x.jpg");
+    background-size: 320px auto;
+    background-position: bottom;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    background-image: url("../images/tablet-panel.svg"), url("../images/main-page-image/title-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 768px auto;
+    background-position: bottom, 0 49px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/tablet-panel.svg"), url("../images/main-page-image/title-tablet@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 768px auto;
+      background-position: bottom, 0 49px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    background-image: url("../images/desktop-panel.svg"), url("../images/main-page-image/title-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1200px auto;
+    background-position: bottom, 0 57px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/desktop-panel.svg"), url("../images/main-page-image/title-desktop@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 1200px auto;
+      background-position: bottom, 0 57px;
+    }
+  }
+}
+
+.page-title__image {
+  display: block;
+  width: 282px;
+  margin: 90px 19px;
+  margin-bottom: 85px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title__image {
+    width: 461px;
+    height: 350px;
+    margin: 131px 154px;
+    margin-bottom: 92px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title__image {
+    width: 460px;
+    height: 350px;
+    margin: 133px 370px;
+    margin-bottom: 91px;
+  }
+}

@@ -2,12 +2,14 @@
   position: relative;
   margin: 0;
   padding: 0;
+  padding-bottom: 36px;
   background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .location {
     width: 768px;
+    padding: 0;
   }
 }
 
@@ -34,38 +36,5 @@
 @media (min-width: $desktop-width) {
   .location__map {
     width: 1200px;
-  }
-}
-
-.location__button {
-  position: absolute;
-  top: 155px;
-  left: 135px;
-  padding: 6px;
-  border-radius: 50%;
-  background-color: #ffffff;
-}
-
-.location__button::before {
-  display: flex;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #81b3d3;
-  content: "";
-}
-
-@media (min-width: $tablet-width) {
-  .location__button {
-    position: absolute;
-    top: 160px;
-    left: 370px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .location__button {
-    position: absolute;
-    top: 160px;
-    left: 600px;
   }
 }

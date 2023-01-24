@@ -1,55 +1,62 @@
 .impression-information {
+  border-top: 1px solid #e5e5e5;
   margin: 0;
-  margin-top: 59px;
-  padding: 0;
+  margin-top: 7px;
+  padding: 24px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .impression-information {
     width: 648px;
-    margin: 0;
-    padding: 0 50px;
-    padding-top: 48px;
+    margin: 0 50px;
+    padding: 0;
+    margin-top: 72px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .impression-information {
     width: 960px;
-    margin: 0;
-    padding: 0 120px;
-    padding-top: 48px;
+    margin: 0 120px;
+    padding: 0;
+    margin-top: 81px;
   }
 }
 
 .impression-information__title {
   display: block;
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 0 15px;
+  margin-top: 3px;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .impression-information__title {
-    margin: 0 60px;
+    font-size: 21px;
+    margin: 0 121px;
+    margin-top: -13px;
+    background-color: #ffffff;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .lacation {
-    margin: 0 120px;
+  .impression-information__title {
+    margin: 0 280px;
+    margin-top: -13px;
   }
 }
 
 .impression-information__list {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-left: 37px;
   padding: 0;
   list-style-type: none;
 }
@@ -58,6 +65,8 @@
   .impression-information__list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 37px;
+    margin-left: 75px;
   }
 }
 
@@ -65,6 +74,8 @@
   .impression-information__list {
     display: flex;
     justify-content: space-between;
+    margin-left: 90px;
+    margin-top: 56px;
   }
 }
 
@@ -76,19 +87,32 @@
 
 @media (min-width: $tablet-width) {
   .impression-information__item {
-    width: 324px;
+    width: 280px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .impression-information__item:nth-child(even) {
+    margin-left: 13px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .impression-information__item {
-    width: 300px;
+    width: 253px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .impression-information__item:nth-child(even) {
+    margin: 0;
   }
 }
 
 .impression-information__radio {
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;

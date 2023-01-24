@@ -2,7 +2,6 @@
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,16 +27,20 @@
 .service-item--hotel {
   background-image: url("../images/service-house.svg");
   background-repeat: no-repeat;
-  background-position: 10px 0;
-  background-size: 39px;
+  background-position: 18px 25px;
+  background-size: 40px;
+  padding: 10px 12px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .service-item--hotel {
     background-image: url("../images/service-house.svg");
     background-repeat: no-repeat;
-    background-position: 90px 45px;
-    background-size: 77px;
+    background-position: 89px 61px;
+    background-size: 78px;
+    padding: 158px 0;
+    padding-bottom: 58px;
   }
 }
 
@@ -45,49 +48,62 @@
   .service-item--hotel {
     background-image: url("../images/service-house.svg");
     background-repeat: no-repeat;
-    background-position: 160px 50px;
-    background-size: 77px;
+    background-position: 160px 72px;
+    background-size: 79px;
+    padding: 170px 0;
+    padding-bottom: 67px;
   }
 }
 
-.servuce-item--food {
+.service-item--food {
   background-image: url("../images/service-burger.svg");
   background-repeat: no-repeat;
-  background-position: 10px 0;
-  background-size: 39px;
+  background-position: 18px 15px;
+  background-size: 40px;
+  padding: 2px 12px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .servuce-item--food {
+  .service-item--food {
     background-image: url("../images/service-burger.svg");
     background-repeat: no-repeat;
-    background-position: 90px 45px;
-    background-size: 77px;
+    background-position: 90px 58px;
+    background-size: 78px;
+    padding: 156px 0;
+    padding-bottom: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .servuce-item--food {
+  .service-item--food {
     background-image: url("../images/service-burger.svg");
     background-repeat: no-repeat;
-    background-position: 160px 50px;
-    background-size: 77px;
+    background-position: 160px 72px;
+    background-size: 79px;
+    padding: 170px 0;
+    padding-bottom: 67px;
   }
 }
 
 .service-item--souvenir {
   background-image: url("../images/service-souvenir.svg");
   background-repeat: no-repeat;
-  background-position: 10px 0;
-  background-size: 39px;
+  background-position: 20px 25px;
+  background-size: 36px;
+  padding: 8px 12px;
+  padding-bottom: 45px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .service-item--souvenir {
     background-image: url("../images/service-souvenir.svg");
     background-repeat: no-repeat;
-    background-position: 90px 45px;
-    background-size: 77px;
+    background-position: 95px 65px;
+    background-size: 74px;
+    padding: 153px 0;
+    padding-bottom: 58px;
   }
 }
 
@@ -95,26 +111,30 @@
   .service-item--souvenir {
     background-image: url("../images/service-souvenir.svg");
     background-repeat: no-repeat;
-    background-position: 160px 50px;
-    background-size: 77px;
+    background-position: 160px 72px;
+    background-size: 79px;
+    padding: 170px 0;
+    padding-bottom: 67px;
   }
 }
 
 .service-item__title {
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 8px;
-  margin-left: 62px;
+  margin-top: 22px;
+  margin-left: 54px;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .service-item__title {
+    font-size: 21px;
+    line-height: 26px;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -123,6 +143,8 @@
 
 @media (min-width: $desktop-width) {
   .service-item__title {
+    font-size: 21px;
+    line-height: 26px;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -131,20 +153,22 @@
 
 .service-item__text {
   color: #333333;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
   margin-top: 16px;
-  margin-left: 62px;
+  margin-left: 54px;
 }
 
 @media (min-width: $tablet-width) {
   .service-item__text {
+    font-size: 14px;
+    line-height: 21px;
     text-align: center;
-    margin: 0 32px;
+    margin: 0 38px;
     margin-top: 25px;
     padding: 0;
   }
@@ -152,8 +176,10 @@
 
 @media (min-width: $desktop-width) {
   .service-item__text {
+    font-size: 14px;
+    line-height: 21px;
     text-align: center;
-    margin: 0 40px;
+    margin: 0 58px;
     margin-top: 25px;
     padding: 0;
   }
