@@ -19,13 +19,12 @@
   .sent-container {
     width: 640px;
     margin: auto;
-
   }
 }
 
 .sent-container__title {
   color: #000000;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -51,7 +50,7 @@
 
 .sent-container__text {
   color: #333333;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -89,16 +88,10 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .sent-container__close {
-
-  }
-}
-
 .sent-container__link {
   color: #ffffff;
   background-color: #81b3d2;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -107,6 +100,20 @@
   text-decoration: none;
   padding: 16px 76px;
   margin: 0;
+}
+
+.sent-container__link:hover {
+  background-color: #669ec0;
+}
+
+.sent-container__link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.sent-container__link:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {

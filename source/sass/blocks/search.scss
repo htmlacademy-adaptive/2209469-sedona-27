@@ -22,7 +22,7 @@
 
 .search__title {
   color: #000000;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -52,7 +52,7 @@
 
 .search__text {
   color: #333333;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -91,13 +91,27 @@
   width: 264px;
   background-color: #81b3d2;
   color: #ffffff;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+}
+
+.search__link:hover {
+  background-color: #669ec0;
+}
+
+.search__link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.search__link:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {

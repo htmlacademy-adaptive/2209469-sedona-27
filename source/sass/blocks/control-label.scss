@@ -1,0 +1,24 @@
+.control-label {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .control-label {
+    display: block;
+    text-align: start;
+    margin: 0;
+    margin-left: 8px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .control-label {
+    display: inline;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}

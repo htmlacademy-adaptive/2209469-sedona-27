@@ -23,7 +23,7 @@
 .personal-information__title {
   display: block;
   color: #000000;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -51,7 +51,7 @@
 
 .personal-information__text {
   color: #333333;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -86,7 +86,7 @@
 .personal-information__input-name {
   color: #000000;
   background-color: #f2f2f2;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -110,4 +110,13 @@
     margin: 0;
     margin-left: 58px;
   }
+}
+
+.personal-information__input-name:hover {
+  background-color: #e5e5e5;
+}
+
+.personal-information__input-name:active {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
 }

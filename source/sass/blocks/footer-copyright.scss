@@ -28,7 +28,7 @@
 .footer-copyright__text {
   display: flex;
   color: #000000;
-  font-family: "PT Sans", "Open sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -38,7 +38,26 @@
   margin-right: 12px;
 }
 
+.footer-copyright__text:hover {
+  color: #81b3d2;
+}
+
+.footer-copyright__text:active {
+  color: #b3b3b3;
+}
+
+
 .footer-copyright__image {
   margin: 0;
   padding: 0;
+  fill: #000000;
+}
+
+.footer-copyright__image:hover {
+  fill: #81b3d2;
+  color: #81b3d2;
+}
+
+.footer-copyright__image:active {
+  fill: #b3b3b3;
 }

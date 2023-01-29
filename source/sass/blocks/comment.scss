@@ -28,14 +28,13 @@
 .comment__title {
   display: block;
   color: #000000;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   margin: 0 15px;
-  margin-top: 3px;
   padding: 0;
 }
 
@@ -58,7 +57,7 @@
 .comment__text {
   color: rgba(0, 0, 0, 0.3);
   background-color: #f2f2f2;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -87,11 +86,21 @@
   }
 }
 
+.comment__text:hover {
+  background-color: #e5e5e5;
+}
+
+.comment__text:active {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+}
+
+
 .comment__button {
   display: block;
   color: #ffffff;
   background-color: #81b3d2;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -102,6 +111,7 @@
   margin: 0;
   margin-top: 51px;
   padding: 0;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -120,10 +130,18 @@
   }
 }
 
+.comment__button:hover {
+  background-color: #669ec0;
+}
+
+.comment__button:active {
+  background-color: #5496bd;
+}
+
 .comment__helper-text {
   color: rgba(51, 51, 51, 0.6);
   background-color: #ffffff;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 21px;
   font-weight: 400;
