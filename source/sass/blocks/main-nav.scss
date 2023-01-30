@@ -186,6 +186,12 @@
   }
 }
 
+.main-nav--nojs .main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .main-nav--open .main-nav__list {
   margin: 0;
   padding: 0;
@@ -380,6 +386,5 @@
 
   .main-nav__item .main-nav__item-link--current:active {
     background-color: #ffffff;
-
   }
 }
