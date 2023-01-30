@@ -88,6 +88,14 @@
   z-index: 1;
 }
 
+.main-nav__toggle__menu:hover {
+  fill: #669ec0;
+}
+
+.main-nav__toggle__menu:active {
+  fill: #5496bd;
+}
+
 .main-nav--close .main-nav__toggle {
   margin: 0;
   padding: 0;

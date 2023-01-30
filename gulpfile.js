@@ -10,6 +10,7 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgstore';
+import {deleteAsync} from 'del';
 import svgomin from 'gulp-svgmin';
 
 // Styles
@@ -29,7 +30,7 @@ export const styles = () => {
 
 // HTML
 
-const html = () => {
+export const html = () => {
   return gulp.src('source/*.html')
    .pipe(htmlmin({ collapseWhitespace: true }))
    .pipe(gulp.dest('build'))
@@ -37,7 +38,7 @@ const html = () => {
 
 // Scripts
 
-const scripts = () => {
+export const scripts = () => {
   return gulp.src('source/js/*.js')
    .pipe(terser())
    .pipe(gulp.dest('build/js'))
@@ -57,7 +58,7 @@ export const copyImages = () => {
 }
 
 // WebP
-const createWebP = () => {
+export const createWebP = () => {
   return gulp.src('source/images/**/*.{jpg,png}')
    .pipe(squoosh({webp: {}}))
    .pipe(gulp.dest('build/images'))
@@ -66,8 +67,8 @@ const createWebP = () => {
 // SVG
 
 export const svg = () => {
-  return gulp.src('source/images/**/*.svg')
-   .pipe((svgo))
+  return gulp.src('source/images/**/{*.svg}')
+   .pipe(svgo())
    .pipe(gulp.dest('build/images'))
 }
 
@@ -76,7 +77,7 @@ export const svg = () => {
 export const copy = (done) => {
   gulp.src([
     'source/fonts/*.{wolf2,wolf}',
-    'source/*.ico',
+    'source/**/*.ico',
 ],   {
     base: 'source'
 })
@@ -86,9 +87,9 @@ export const copy = (done) => {
 
 // Clean
 
-export const clean = () => {
-  return del( 'build');
-};
+export const deletedFilePaths = () => {
+   return deleteAsync('build')
+}
 
 // Server
 
@@ -119,9 +120,10 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+// Build
 
-export const build = gulp.series(
-  clean,
+const build = gulp.series(
+  deletedFilePaths,
   copy,
   otimizeImages,
   gulp.parallel(
@@ -136,7 +138,7 @@ export const build = gulp.series(
 // Default
 
 export default gulp.series(
-  clean,
+  deletedFilePaths,
   copy,
   copyImages,
   gulp.parallel(
@@ -146,4 +148,8 @@ export default gulp.series(
     svg,
     createWebP,
   ),
+   gulp.series(
+    server,
+    watcher
+   )
 );
