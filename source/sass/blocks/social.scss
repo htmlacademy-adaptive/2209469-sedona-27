@@ -48,10 +48,18 @@
 .social__title {
   display: block;
   color: #000000;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+
+.social__title:hover {
+  color: #81b3d2;
+}
+
+.social__title:active {
+  color: #b3b3b3;
 }

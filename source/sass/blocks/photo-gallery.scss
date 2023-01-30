@@ -43,7 +43,7 @@
   }
 }
 
-.photo-gallery__item--current {
+.photo-gallery__list .photo-gallery__item--current {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   margin: 0;
@@ -52,7 +52,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photo-gallery__item--current {
+  .photo-gallery__list .photo-gallery__item--current {
     display: block;
     width: 698px;
     margin: 0;
@@ -63,7 +63,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photo-gallery__item--current {
+  .photo-gallery__list .photo-gallery__item--current {
     width: 1200px;
     border: none;
     margin: 0;
@@ -145,7 +145,7 @@
   }
 }
 
-.photo-gallery__image--current {
+.photo-gallery__link .photo-gallery__image--current {
   width: 280px;
   background-color: #ffffff;
   color: #000000;
@@ -153,20 +153,21 @@
 
 
 @media (min-width: $tablet-width) {
-  .photo-gallery__image--current {
+  .photo-gallery__link .photo-gallery__image--current {
     width: 648px;
     height: 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .photo-gallery__image--current {
+  .photo-gallery__link .photo-gallery__image--current {
     width: 1200px;
     height: 400px;
   }
 }
 
 .photo-gallery__countainer {
+  position: relative;
   margin: 0;
   padding: 24px 0;
   padding-top: 12px;
@@ -186,15 +187,40 @@
     margin-top: -104px;
     padding: 14px 0;
     padding-top: 18px;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-gallery__countainer::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 400px;
+    height: 80px;
     background-color: #000000;
-    opacity: 0.6;
+    opacity: 0.3;
+    content: "";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-gallery__countainer--current::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 1200px;
+    height: 80px;
+    background-color: #000000;
+    opacity: 0.3;
+    content: "";
   }
 }
 
 .photo-gallery__title {
   display: block;
   color: #000000;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -221,7 +247,7 @@
 
 .photo-gallery__text {
   color: #333333;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -301,6 +327,7 @@
 @media (min-width: $desktop-width) {
   .photo-gallery__image-like {
     fill: #ffffff;
+    opacity: initial;
   }
 }
 
@@ -314,7 +341,7 @@
 
 .photo-gallery__like-number {
   color: #000000;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;

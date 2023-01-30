@@ -25,7 +25,7 @@
 .contact-information__title {
   display: block;
   color: #000000;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -51,7 +51,7 @@
 
 .contact-information__text {
   color: #333333;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -86,7 +86,7 @@
 .contact-information__input-phone {
   color: #000000 30%;
   background-color: #f2f2f2;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -115,6 +115,15 @@
   }
 }
 
+.contact-information__input-phone:hover {
+  background-color: #e5e5e5;
+}
+
+.contact-information__input-phone:active {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+}
+
 .contact-information__email {
   display: block;
   margin: 0;
@@ -124,7 +133,7 @@
 .contact-information__input-email {
   color: #000000 30%;
   background-color: #f2f2f2;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -151,4 +160,13 @@
     width: 368px;
     margin-left: 11px;
   }
+}
+
+.contact-information__input-email:hover {
+  background-color: #e5e5e5;
+}
+
+.contact-information__input-email:active {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
 }

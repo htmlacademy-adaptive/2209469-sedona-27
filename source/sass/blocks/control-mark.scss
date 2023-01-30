@@ -1,0 +1,102 @@
+.control-mark--radio {
+  position: absolute;
+  top: -13px;
+  left: -62px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-color: #ffffff;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.impression-information__input-radio[type="radio"]:checked + .control-mark--radio::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #333333;
+  content: "";
+}
+
+.impression-information__radio:hover .control-mark--radio {
+  background-color: #e5e5e5;
+}
+
+.impression-information__list .impression-information__input-radio:focus ~ .control-mark--radio {
+  outline: 2px solid #000000;
+}
+
+.impression-information__radio:active .control-mark--radio {
+  background-color: #d5d5d5;
+  outline: none;
+}
+
+.control-mark--checkbox {
+  position: absolute;
+  top: -13px;
+  left: -63px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-color: #ffffff;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .control-mark--checkbox {
+    position: absolute;
+    top: -12px;
+    left: -124px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .control-mark--checkbox {
+    position: absolute;
+    top: -13px;
+    left: -63px;
+  }
+}
+
+.visits-information__input-checkbox[type="checkbox"]:checked + .control-mark--checkbox::before,
+.visits-information__input-checkbox[type="checkbox"]:checked + .control-mark--checkbox::after {
+  position: absolute;
+  background-color: #333333;
+  content: "";
+}
+
+.visits-information__input-checkbox[type="checkbox"]:checked + .control-mark--checkbox::before {
+  top: 13px;
+  left: 25px;
+  width: 3px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+
+.visits-information__input-checkbox[type="checkbox"]:checked + .control-mark--checkbox::after {
+  top: 20px;
+  right: 28px;
+  width: 3px;
+  height: 11px;
+  transform: rotate(135deg);
+}
+
+.visits-information__checkbox:hover .control-mark--checkbox {
+  background-color: #e5e5e5;
+}
+
+.visits-information__list .visits-information__input-checkbox:focus ~ .control-mark--checkbox {
+  outline: 2px solid #000000;
+}
+
+.visits-information__checkbox:active .control-mark--checkbox {
+  background-color: #d5d5d5;
+  outline: none;
+}
+

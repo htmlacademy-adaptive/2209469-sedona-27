@@ -27,7 +27,7 @@
 
 .advantage-bottom__title {
   color: #000000;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -57,7 +57,7 @@
 
 .advantage-bottom__text-number {
   color: #333333;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -84,7 +84,7 @@
 
 .advantage-bottom__text {
   color: #333333;
-  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -155,10 +155,6 @@
 
   .advantage-bottom--number4::after {
     display: none;
-
-    .advantage-bottom--number4::before {
-      display: none;
-    }
   }
 }
 
